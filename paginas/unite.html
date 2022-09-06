@@ -64,65 +64,76 @@
             Ayudante de Cocina, Cocinero, Mozo y Delivery, escribinos!
           </p>
           <form>
-            <input
-              name="name"
-              type="text"
-              class="feedback-input"
-              placeholder="Nombre"
-            />
-            <input
-              name="last_name"
-              type="text"
-              class="feedback-input"
-              placeholder="Apellido"
-            />
-            <input
-              name="birth_date"
-              type="date"
-              class="feedback-input"
-              placeholder="Fecha de nacimiento"
-            />
-            <input
-              name="pronombre"
-              type="text"
-              class="feedback-input"
-              placeholder="Pronombres"
-            />
-            <input
-              name="email"
-              type="text"
-              class="feedback-input"
-              placeholder="Email"
-            />
-            <input
-              name="celular"
-              type="text"
-              class="feedback-input"
-              placeholder="Telefono"
-            />
-            <textarea
-              name="text"
-              class="feedback-text"
-              placeholder="Contanos de vos"
-            ></textarea>
-            <input
-              name="cv"
-              type="file"
-              class="inputfile"
-              placeholder="Adjunta tu CV"
-            />
-            <input type="file" id="file-upload" />
-            <label for="file-upload">Adjunta tu CV</label>
-            <select class="feedback-input" name="puesto">
-              <option value="" aria-label="puesto" disabled selected>
-                Puesto deseado
-              </option>
-              <option value="0">Ayudante de cocina</option>
-              <option value="1">Cocinero</option>
-              <option value="2">Mozo</option>
-              <option value="3">Delivery</option>
-            </select>
-            <input class="enviar" type="submit" value="Enviar" />
+            <div class="form__grid">
+              <input
+                id="nombre"
+                name="name"
+                type="text"
+                class="feedback-input"
+                placeholder="Nombre"
+              />
+              <input
+                id="apellido"
+                name="last_name"
+                type="text"
+                class="feedback-input"
+                placeholder="Apellido"
+              />
+              <input
+                id="fecha"
+                name="birth_date"
+                type="date"
+                class="feedback-input"
+                placeholder="Fecha de nacimiento"
+              />
+              <input
+                id="pronombre"
+                name="pronombre"
+                type="text"
+                class="feedback-input"
+                placeholder="Pronombres"
+              />
+              <input
+                id="email"
+                name="email"
+                type="text"
+                class="feedback-input"
+                placeholder="Email"
+              />
+              <input
+                id="celu"
+                name="celular"
+                type="text"
+                class="feedback-input"
+                placeholder="Telefono"
+              />
+              <textarea
+                id="textarea"
+                name="text"
+                class="feedback-text"
+                placeholder="Contanos de vos"
+              ></textarea>
+              <input
+                name="cv"
+                type="file"
+                class="inputfile"
+                placeholder="Adjunta tu CV"
+              />
+              <div id="cv">
+                <input type="file" id="file-upload" />
+                <label for="file-upload">Adjunta tu CV</label>
+              </div>
+              <select id="puesto" class="feedback-input" name="puesto">
+                <option value="" aria-label="puesto" disabled selected>
+                  Puesto deseado
+                </option>
+                <option value="0">Ayudante de cocina</option>
+                <option value="1">Cocinero</option>
+                <option value="2">Mozo</option>
+                <option value="3">Delivery</option>
+              </select>
+            </div>
+            <input id="enviar" class="enviar" type="submit" value="Enviar" />
           </form>
         </div>
       </div>

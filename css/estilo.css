@@ -463,12 +463,50 @@ i {
   flex-direction: column;
   text-align: center;
 }
+.form__grid {
+  display: grid;
+  grid-template-columns: repeat(1fr, 2);
+  grid-template-rows: repeat(1fr, 6);
+  grid-template-areas:
+    "nombre apellido"
+    "fecha pronombre"
+    "email celu"
+    "textarea textarea"
+    "textarea textarea"
+    "cv puesto";
+  justify-items: center;
+}
 form {
-  max-width: 500px;
+  width: 500px;
   margin: 50px auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+#nombre {
+  grid-area: nombre;
+}
+#apellido {
+  grid-area: apellido;
+}
+#fecha {
+  grid-area: fecha;
+}
+#pronombre {
+  grid-area: pronombre;
+}
+#email {
+  grid-area: email;
+}
+#celu {
+  grid-area: celu;
+}
+#textarea {
+  grid-area: textarea;
+}
+#cv {
+  grid-area: cv;
+}
+#puesto {
+  grid-area: puesto;
 }
 .feedback-input {
   color: #48000c;
@@ -481,7 +519,7 @@ form {
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
-  width: 49%;
+  width: 240px;
   box-sizing: border-box;
   outline: 0;
   display: inline-block;
@@ -502,7 +540,7 @@ label {
   transition: all 0.3s;
   padding: 12px;
   margin-bottom: 15px;
-  width: 49%;
+  width: 240px;
   box-sizing: border-box;
   outline: 0;
   display: inline-block;
@@ -536,18 +574,17 @@ textarea {
   outline: 0;
 }
 .enviar {
-  width: 30%;
   background: #48000c;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
   color: white;
   font-size: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   transition: all 0.3s;
-  margin-top: 30px;
   font-weight: 700;
+  width: 180px;
 }
 .enviar:hover {
   background: #a30015;
@@ -969,24 +1006,32 @@ textarea {
     height: 650px;
     background-repeat: no-repeat;
   }
-  .form {
-    flex-wrap: wrap;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    margin-top: 70px;
-    width: 576px;
-    padding: 0px;
-  }
   .form__p {
     font-size: 1.5rem;
-    width: 450px;
-    padding: 0px;
+    width: 500px;
+    padding: 10px;
+  }
+  .form__grid {
+    grid-template-columns: 1fr 1;
+    grid-template-rows: repeat(1fr, 9);
+    grid-template-areas:
+      "nombre"
+      "apellido"
+      "fecha"
+      "pronombre"
+      "email"
+      "celu"
+      "textarea"
+      "cv"
+      "puesto";
+    justify-items: center;
+  }
+  form {
+    align-self: center;
   }
   .sumate__h2 {
     font-size: 1.5rem;
   }
-
   .feedback-input {
     width: 350px;
     height: 70px;
