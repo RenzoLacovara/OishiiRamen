@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="../css/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css@v1.7/symbiosis.min.css"
+    />
+    <link rel="shortcut icon" href="../iconos/logo.png" type="image/x-icon" />
+    <title>Oishii Ramen</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="./index.html" class="header__nav__inicio"></a>
+        <div>
+          <ul class="header__nav__list">
+            <li class="header__nav__list__item">
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li class="header__nav__list__item">
+              <a href="../paginas/menu.html">Menú</a>
+            </li>
+            <li class="header__nav__list__item">
+              <a href="../paginas/ubicacion.html">Como llegar</a>
+            </li>
+            <li class="header__nav__list__item">
+              <a href="../paginas/nosotros.html">Nosotros</a>
+            </li>
+            <li class="header__nav__list__item">
+              <a href="../paginas/unite.html">Sumate!</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="sumate__div">
+        <div class="sumate">
+          <h2 class="sumate__h2" data-aos="zoom-in" data-aos-duration="2000">
+            No es facil encontrar autentico Ramen y una buena oportunidad<br />Por
+            suerte en Oishii tenemos las dos.
+          </h2>
+        </div>
+      </div>
+      <div class="form">
+        <div>
+          <img class="logo__form" src="../iconos/logo.png" alt="logo" />
+        </div>
+        <div class="form__p">
+          <p>
+            Con la apertura de nuestro nuevo local estamos en busqueda de
+            Ayudante de Cocina, Cocinero, Mozo y Delivery, escribinos!
+          </p>
+          <form>
+            <input
+              name="name"
+              type="text"
+              class="feedback-input"
+              placeholder="Nombre"
+            />
+            <input
+              name="last_name"
+              type="text"
+              class="feedback-input"
+              placeholder="Apellido"
+            />
+            <input
+              name="birth_date"
+              type="date"
+              class="feedback-input"
+              placeholder="Fecha de nacimiento"
+            />
+            <input
+              name="pronombre"
+              type="text"
+              class="feedback-input"
+              placeholder="Pronombres"
+            />
+            <input
+              name="email"
+              type="text"
+              class="feedback-input"
+              placeholder="Email"
+            />
+            <input
+              name="celular"
+              type="text"
+              class="feedback-input"
+              placeholder="Telefono"
+            />
+            <textarea
+              name="text"
+              class="feedback-text"
+              placeholder="Contanos de vos"
+            ></textarea>
+            <input
+              name="cv"
+              type="file"
+              class="inputfile"
+              placeholder="Adjunta tu CV"
+            />
+            <input type="file" id="file-upload" />
+            <label for="file-upload">Adjunta tu CV</label>
+            <select class="feedback-input" name="puesto">
+              <option value="" aria-label="puesto" disabled selected>
+                Puesto deseado
+              </option>
+              <option value="0">Ayudante de cocina</option>
+              <option value="1">Cocinero</option>
+              <option value="2">Mozo</option>
+              <option value="3">Delivery</option>
+            </select>
+            <input class="enviar" type="submit" value="Enviar" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__copyright">
+        <p>© 2022 おいしい Oishii Ramen</p>
+      </div>
+      <div class="footer__social">
+        <a href="https://web.whatsapp.com/" target="_blank"
+          ><i class="fa-brands fa-square-whatsapp"></i
+        ></a>
+        <a href="https://instagram.com/" target="_blank"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a href="https://facebook.com/" target="_blank"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
