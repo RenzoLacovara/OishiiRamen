@@ -10,13 +10,19 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="./css/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/estilo.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css@v1.7/symbiosis.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="./css/css/all.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/estilo.css" />
     <link rel="shortcut icon" href="./iconos/logo.png" type="image/x-icon" />
     <title>Oishii Ramen</title>
   </head>
@@ -33,7 +39,7 @@
               <a href="./paginas/menu.html">Menú</a>
             </li>
             <li class="header__nav__list__item">
-              <a href="./paginas/ubicacion.html">Como llegar</a>
+              <a href="./paginas/ubicacion.html">Ubicación</a>
             </li>
             <li class="header__nav__list__item">
               <a href="./paginas/nosotros.html">Nosotros</a>
@@ -78,106 +84,114 @@
         </div>
       </div>
     </main>
-    <div class="container__vermas">
-      <article
-        class="container__vermas__article"
-        data-aos="fade-up"
-        data-aos-duration="3000"
-      >
-        <div>
-          <h3 class="container__vermas__titulo">Nuestros platos</h3>
-          <img
-            src="./imagenes/nuestrosplatos.jpg"
-            alt="nuestros platos"
-            class="container__vermas__imagen"
-          />
-          <p class="container__vermas__p">
-            Principios y tradicion japonesa pero con el ingenio cordobes para
-            crear nuestra propia identidad y sabor.
-          </p>
-        </div>
-        <a href="./paginas/menu.html" class="container__vermas__a">Ver más</a>
-      </article>
-      <article
-        class="container__vermas__article"
-        data-aos="fade-up"
-        data-aos-duration="3000"
-        data-aos-delay="300"
-      >
-        <div>
-          <h3 class="container__vermas__titulo">Sobre nosotros</h3>
-          <img
-            src="./imagenes/cocinero.jpg"
-            alt="cocinero"
-            class="container__vermas__imagen"
-          />
-          <p class="container__vermas__p">
-            Mas que compañeros, somos una familia. Desde el comienzo tuvimos un
-            sueño y hoy lo podemos compartir.
-          </p>
-        </div>
-        <a href="./paginas/nosotros.html" class="container__vermas__a"
-          >Ver más</a
+    <div class="container">
+      <div class="row container__vermas">
+        <div
+          class="container__vermas__article col-lg-4 col-sm-12"
+          data-aos="fade-up"
+          data-aos-duration="3000"
         >
-      </article>
-      <article
-        class="container__vermas__article"
-        data-aos="fade-up"
-        data-aos-duration="3000"
-        data-aos-delay="600"
-      >
-        <div>
-          <h3 class="container__vermas__titulo">Sumate al equipo</h3>
-          <img
-            src="./imagenes/nosotros1.jpg"
-            alt="equipo"
-            class="container__vermas__imagen"
-          />
-          <p class="container__vermas__p">
-            Siempre hay lugar para uno mas! Estamos en búsqueda de nuevos
-            integrantes para nuestro proximo local.
-          </p>
+          <div class="vermas__contenido">
+            <h3 class="container__vermas__titulo">Nuestros platos</h3>
+            <img
+              src="./imagenes/nuestrosplatos.jpg"
+              alt="nuestros platos"
+              class="container__vermas__imagen"
+            />
+            <p class="container__vermas__p">
+              Principios y tradicion japonesa pero con el ingenio cordobes para
+              crear nuestra propia identidad y sabor.
+            </p>
+          </div>
+          <a href="./paginas/menu.html" class="container__vermas__a">Ver más</a>
         </div>
-        <a href="./paginas/unite.html" class="container__vermas__a">Ver más</a>
-      </article>
+        <div
+          class="container__vermas__article col-lg-4 col-sm-12"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          data-aos-delay="300"
+        >
+          <div class="vermas__contenido">
+            <h3 class="container__vermas__titulo">Sobre nosotros</h3>
+            <img
+              src="./imagenes/cocinero.jpg"
+              alt="cocinero"
+              class="container__vermas__imagen"
+            />
+            <p class="container__vermas__p">
+              Mas que compañeros, somos una familia. Desde el comienzo tuvimos
+              un sueño y hoy lo podemos compartir.
+            </p>
+          </div>
+          <a href="./paginas/nosotros.html" class="container__vermas__a"
+            >Ver más</a
+          >
+        </div>
+        <div
+          class="container__vermas__article col-lg-4 col-sm-12"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          data-aos-delay="600"
+        >
+          <div class="vermas__contenido">
+            <h3 class="container__vermas__titulo">Sumate al equipo</h3>
+            <img
+              src="./imagenes/nosotros1.jpg"
+              alt="equipo"
+              class="container__vermas__imagen"
+            />
+            <p class="container__vermas__p">
+              Siempre hay lugar para uno mas! Estamos en búsqueda de nuevos
+              integrantes para nuestro proximo local.
+            </p>
+          </div>
+          <a href="./paginas/unite.html" class="container__vermas__a"
+            >Ver más</a
+          >
+        </div>
+      </div>
     </div>
     <h2 class="container__titulo">Proximas novedades</h2>
-    <section class="container__novedades">
-      <article
-        class="container__novedades__article"
-        data-aos="fade-right"
-        data-aos-duration="3000"
-      >
-        <h4 class="container__novedades__h4--nl">Nuevo local</h4>
-        <p class="container__novedades__p">
-          Queremos llevar el cariño que ponemos en nuestra cocina aun mas lejos,
-          el 9 de Septiembre visitanos a nuestra nueva sucursal en Barrio
-          Güemes!
-        </p>
-      </article>
-      <article
-        class="container__novedades__article"
-        data-aos="zoom-in"
-        data-aos-duration="2000"
-      >
-        <h4 class="container__novedades__h4--jf">Japanese Culture Festival</h4>
-        <p class="container__novedades__p">
-          El Japanese Culture Festival tendra lugar el 14 de Octubre en La
-          Cañada y Oishii Ramen obviamente estara presente!
-        </p>
-      </article>
-      <article
-        class="container__novedades__article"
-        data-aos="fade-left"
-        data-aos-duration="3000"
-      >
-        <h4 class="container__novedades__h4--sf">StreetFood</h4>
-        <p class="container__novedades__p">
-          Te traemos la mejor Street Food japonesa para acompañar tu paseo por
-          la Feria de Artesanos, el 20 de Diciembre acercate a nuestro puesto!
-        </p>
-      </article>
-    </section>
+    <div class="container d-flex justify-content-evenly">
+      <div class="row container__novedades">
+        <div
+          class="container__novedades__article col-xl-4 col-lg-12 col-sm-12"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
+          <h4 class="container__novedades__h4--nl">Nuevo local</h4>
+          <p class="container__novedades__p">
+            Queremos llevar el cariño que ponemos en nuestra cocina aun mas
+            lejos, el 9 de Septiembre visitanos a nuestra nueva sucursal en
+            Barrio Güemes!
+          </p>
+        </div>
+        <article
+          class="container__novedades__article col-lg-3 col-xl-4 col-sm-12"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          <h4 class="container__novedades__h4--jf">
+            Japanese Culture Festival
+          </h4>
+          <p class="container__novedades__p">
+            El Japanese Culture Festival tendra lugar el 14 de Octubre en La
+            Cañada y Oishii Ramen obviamente estara presente!
+          </p>
+        </article>
+        <article
+          class="container__novedades__article col-lg-3 col-xl-4 col-sm-12"
+          data-aos="fade-left"
+          data-aos-duration="3000"
+        >
+          <h4 class="container__novedades__h4--sf">StreetFood</h4>
+          <p class="container__novedades__p">
+            Te traemos la mejor Street Food japonesa para acompañar tu paseo por
+            la Feria de Artesanos, el 20 de Diciembre acercate a nuestro puesto!
+          </p>
+        </article>
+      </div>
+    </div>
     <div class="container__enlacefinal">
       <a class="container__enlacefinal__a" href="./paginas/ubicacion.html"
         >Veni a conocernos</a
@@ -203,5 +217,10 @@
     <script>
       AOS.init();
     </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
