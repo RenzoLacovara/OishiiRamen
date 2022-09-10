@@ -22,6 +22,9 @@ h2 {
 a.pagina:hover {
   color: #fd012a;
 }
+.pagina i {
+  display: none;
+}
 .header__nav__inicio {
   height: 100px;
   width: 200px;
@@ -655,6 +658,9 @@ textarea {
     font-size: 1.4rem;
     margin: 20px;
   }
+  .pagina i {
+    display: initial;
+  }
   #navbarOffcanvasLg {
     display: flex;
     flex-direction: row;
@@ -662,6 +668,11 @@ textarea {
     justify-content: space-between;
     width: 75%;
     height: 400px;
+    border-radius: 0px 0px 0px 20px;
+    -webkit-border-radius: 0px 0px 0px 20px;
+    -moz-border-radius: 0px 0px 0px 20px;
+    -ms-border-radius: 0px 0px 0px 20px;
+    -o-border-radius: 0px 0px 0px 20px;
   }
   .header__nav__inicio {
     background-image: url("../iconos/logo.png");
