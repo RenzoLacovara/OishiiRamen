@@ -667,7 +667,7 @@ textarea {
     align-items: flex-start;
     justify-content: space-between;
     width: 80%;
-    height: 400px;
+    height: 380px;
     border-radius: 0px 0px 0px 20px;
     -webkit-border-radius: 0px 0px 0px 20px;
     -moz-border-radius: 0px 0px 0px 20px;
@@ -686,7 +686,7 @@ textarea {
     list-style: circle;
   }
   .header__nav__list__item {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: 10px 0px;
   }
   /* inicio */
