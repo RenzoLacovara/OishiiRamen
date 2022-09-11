@@ -36,6 +36,11 @@ a.pagina:hover {
 
 .navbar {
   border-bottom: 2px solid #48000c;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 .offcanvas {
   background-color: #ffe6cf;
@@ -656,7 +661,17 @@ textarea {
 .inputfile + label:hover {
   background-color: red;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 944px) {
+  .header__nav__inicio {
+    background-image: url(../iconos/logo.png);
+    background-repeat: no-repeat;
+    margin: 0px;
+    width: 105px;
+    margin-left: 20px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 768px) {
   /* nav */
   .btn-close {
     font-size: 1.4rem;
@@ -889,13 +904,6 @@ textarea {
   .header__nav {
     padding-top: 10px;
     border-bottom: 2px solid #48000c;
-  }
-  .header__nav__inicio {
-    background-image: url(../iconos/logo.png);
-    background-repeat: no-repeat;
-    margin: 0px;
-    width: 105px;
-    margin-left: 20px;
   }
   nav ul li {
     font-size: 1rem;
