@@ -242,11 +242,11 @@ video {
 .container__vermas__a {
   padding: 10px 20px;
   color: white;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
   background-color: #48000c;
   text-decoration: none;
 }
@@ -487,6 +487,7 @@ i {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  padding-top: 50px;
 }
 .sumate__h2 {
   padding-top: 20px;
@@ -515,7 +516,7 @@ i {
   -o-border-radius: 15px;
 }
 .form {
-  margin-top: 70px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -633,7 +634,7 @@ textarea {
 }
 .enviar {
   background: #48000c;
-  border-radius: 5px;
+  border-radius: 50px;
   border: 0;
   cursor: pointer;
   color: white;
@@ -643,6 +644,10 @@ textarea {
   transition: all 0.3s;
   font-weight: 700;
   width: 180px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 .enviar:hover {
   background: #a30015;
@@ -1129,7 +1134,7 @@ textarea {
     background-position-x: center;
     height: 650px;
     background-repeat: no-repeat;
-    padding-top: 300px;
+    padding-top: 350px;
   }
   .form {
     width: 100%;
