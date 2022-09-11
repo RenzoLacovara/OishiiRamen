@@ -712,6 +712,9 @@ textarea {
     margin: 10px 0px;
   }
   /* inicio */
+  #indexlg {
+    display: none;
+  }
   .main__inicio h1 {
     text-transform: uppercase;
     font-size: 65px;
@@ -944,6 +947,9 @@ textarea {
     font-size: 1.3rem;
   }
   /* inicio */
+  .indexlg {
+    display: none;
+  }
   .main__inicio h1 {
     text-transform: uppercase;
     font-size: 45px;
