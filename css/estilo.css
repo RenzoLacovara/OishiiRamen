@@ -89,7 +89,7 @@ nav ul a {
 .container__comienzo {
   display: grid;
   padding: 20px 50px;
-  grid-template-columns: repeat(1fr, 3);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(1fr, 4);
   grid-template-areas:
     "p1 img1 ."
@@ -97,6 +97,8 @@ nav ul a {
     "img3 p2 img4"
     ". img5 arigato";
   justify-items: center;
+  width: 100%;
+  margin-top: 100px;
 }
 .container__p {
   grid-area: p1;
@@ -145,9 +147,6 @@ nav ul a {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-}
-.container__somos__fl {
-  margin-top: 70px;
 }
 /* Inicio */
 .container__video {
@@ -652,7 +651,7 @@ textarea {
 .inputfile + label:hover {
   background-color: red;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   /* nav */
   .btn-close {
     font-size: 1.4rem;
@@ -715,13 +714,13 @@ textarea {
   }
   .container__novedades__p {
     padding: 20px;
-    font-size: 1.28rem;
+    font-size: 1.1rem;
     width: 65%;
   }
   .container__novedades__article h4 {
-    padding: 0px;
+    padding: 10px;
     height: 250px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     width: 55%;
   }
   .container__titulo {
@@ -823,7 +822,7 @@ textarea {
   .container__comienzo {
     padding-top: 40px;
     display: grid;
-    grid-template-columns: repeat(1fr, 2);
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(1fr, 5);
     grid-template-areas:
       "p1 img1"
@@ -848,7 +847,7 @@ textarea {
     padding: 20px 20px;
   }
   .container__comienzo img {
-    width: 320px;
+    width: 90%;
     height: 250px;
   }
   .container__arigato {
@@ -1082,7 +1081,7 @@ textarea {
   .container__comienzo {
     width: 100%;
     height: auto;
-    grid-template-columns: 1fr, 1;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr, 10);
     grid-template-areas:
       "p1"
