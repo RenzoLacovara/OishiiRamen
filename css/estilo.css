@@ -969,21 +969,42 @@ textarea {
   .main__inicio p {
     font-size: 20px;
   }
+  .indexslid {
+    padding: 30px;
+    overflow: hidden;
+  }
   .container__vermas__article {
-    width: 90%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .container__vermas__p {
+    width: 80%;
+    padding-top: 10px;
+  }
+  .container__vermas__a {
+    margin: 20px 0px;
   }
   .container__vermas__imagen {
-    width: 95%;
+    width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
   }
   .container__novedades {
     height: auto;
+    width: 100%;
+  }
+  .novedadeslid {
     width: 100%;
   }
   .container__novedades__article {
     flex-direction: column;
     padding: 0px;
     align-items: center;
-    width: 90%;
+    max-width: 100%;
     height: 400px;
     margin: 20px;
   }
