@@ -5,6 +5,31 @@
   font-weight: 400;
   color: #48000c;
 }
+
+p::selection {
+  background-color: #48000c;
+  color: white;
+}
+h1::selection {
+  background-color: #48000c;
+  color: white;
+}
+h2::selection {
+  background-color: #48000c;
+  color: white;
+}
+h3::selection {
+  background-color: #48000c;
+  color: white;
+}
+h4::selection {
+  background-color: #48000c;
+  color: white;
+}
+a::selection {
+  background-color: #48000c;
+  color: white;
+}
 body {
   background-color: #ffe6cf;
 }
@@ -906,7 +931,7 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
   /* nav */
   .header {
     height: 105px;
