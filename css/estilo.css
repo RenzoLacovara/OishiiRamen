@@ -6,27 +6,13 @@
   color: #48000c;
 }
 
-p::selection {
-  background-color: #48000c;
-  color: white;
-}
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+a::selection,
 h1::selection {
-  background-color: #48000c;
-  color: white;
-}
-h2::selection {
-  background-color: #48000c;
-  color: white;
-}
-h3::selection {
-  background-color: #48000c;
-  color: white;
-}
-h4::selection {
-  background-color: #48000c;
-  color: white;
-}
-a::selection {
   background-color: #48000c;
   color: white;
 }
