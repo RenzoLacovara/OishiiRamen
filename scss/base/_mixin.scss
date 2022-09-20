@@ -1,0 +1,15 @@
+$background-claro: white;
+$texto-claro: white;
+$background-oscuro: black;
+$texto-oscuro: black;
+
+@mixin tema($tema-claro: true) {
+  @if $tema-claro {
+    background-color: $background-claro;
+    color: $texto-claro;
+  }
+  else {
+    background-color: $background-oscuro;
+    color: $texto-oscuro;
+  }
+}

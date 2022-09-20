@@ -1,0 +1,101 @@
+.container__menu__titulo {
+  padding-top: 40px;
+  text-align: center;
+}
+.menu__icono__div {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  .menu__icono {
+    height: 30px;
+    width: 30px;
+  }
+}
+.menu__h2 {
+  text-align: center;
+}
+.menu {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  & .menu__platos:hover .menu__img {
+    transform: translate(125px, 0px);
+    -webkit-transform: translate(125px, 0px);
+    -moz-transform: translate(125px, 0px);
+    -ms-transform: translate(125px, 0px);
+    -o-transform: translate(125px, 0px);
+    border-radius: 0px 15px 15px 0px;
+    -webkit-border-radius: 0px 15px 15px 0px;
+    -moz-border-radius: 0px 15px 15px 0px;
+    -ms-border-radius: 0px 15px 15px 0px;
+    -o-border-radius: 0px 15px 15px 0px;
+  }
+  & .menu__platos:hover .menu__text {
+    transform: translate(-125px, 0px);
+    -webkit-transform: translate(-125px, 0px);
+    -moz-transform: translate(-125px, 0px);
+    -ms-transform: translate(-125px, 0px);
+    -o-transform: translate(-125px, 0px);
+    border-radius: 15px 0px 0px 15px;
+    -webkit-border-radius: 15px 0px 0px 15px;
+    -moz-border-radius: 15px 0px 0px 15px;
+    -ms-border-radius: 15px 0px 0px 15px;
+    -o-border-radius: 15px 0px 0px 15px;
+  }
+  .menu__platos {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+
+    .menu__text {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      width: 250px;
+      height: 250px;
+      padding: 10px;
+      gap: 15px;
+      position: absolute;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+      transition: all 1s;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      .menu__h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        i {
+          font-size: 1.7rem;
+        }
+      }
+      .menu__p {
+        font-size: 0.9rem;
+      }
+    }
+    .menu__img {
+      height: 250px;
+      width: 250px;
+      position: absolute;
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+      transition: all 1s;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+    }
+  }
+}

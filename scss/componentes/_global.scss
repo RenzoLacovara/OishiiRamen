@@ -1,0 +1,118 @@
+* {
+  background-color: $color-principal;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  color: $color-secundario;
+}
+p::selection,
+h3::selection,
+h4::selection,
+a::selection {
+  background-color: $color-secundario;
+  color: white;
+}
+body {
+  background-color: $color-principal;
+}
+h1 {
+  font-weight: 700;
+  &::selection {
+    background-color: $color-secundario;
+    color: white;
+  }
+}
+h2 {
+  font-weight: 600;
+  &::selection {
+    background-color: $color-secundario;
+    color: white;
+  }
+}
+.header {
+  height: 105px;
+  overflow: hidden;
+  .header__nav {
+    border-bottom: 2px solid $color-secundario;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    .navbtn {
+      margin-right: 30px;
+    }
+    .header__nav__inicio {
+      height: 100px;
+      width: 200px;
+      margin-left: 30px;
+      background-image: url("../iconos/logo2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      .headerdiv {
+        background-color: $color-principal;
+      }
+    }
+  }
+}
+.header__nav__list {
+  list-style: none;
+  display: flex;
+  padding-right: 20px;
+  justify-content: end;
+  padding-top: 20px;
+  .header__nav__list__item {
+    display: flex;
+    margin: 0px 20px;
+    font-size: 1.3rem;
+    .pagina {
+      font-weight: 700;
+      text-decoration: none;
+      color: #48000c;
+      i {
+        display: none;
+      }
+      &:hover {
+        color: #fd012a;
+      }
+    }
+  }
+}
+.container__enlacefinal {
+  padding-top: 40px;
+  height: 130px;
+  text-align: center;
+  .container__enlacefinal__a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $color-detalle;
+    text-decoration: none;
+    &:hover {
+      color: $color-detalle-d;
+    }
+  }
+}
+footer {
+  border-top: 2px solid $color-secundario;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .footer__copyright {
+    padding-left: 20px;
+    font-size: 1.2rem;
+  }
+  .footer__social {
+    display: flex;
+    padding-right: 20px;
+    a {
+      margin: 0px 5px;
+      i {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+.carro {
+  display: none;
+}

@@ -1,0 +1,142 @@
+.container__video {
+  width: 100%;
+  height: 480px;
+  position: relative;
+  @extend %disposicion;
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 480px;
+    position: absolute;
+    z-index: 1;
+  }
+  .container__overlay {
+    position: absolute;
+    width: 100%;
+    height: 480px;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .main__inicio {
+    background: rgba(223, 231, 233, 0);
+    width: 600px;
+    position: relative;
+    z-index: 3;
+    .main__inicio__titulo {
+      @extend %configini;
+      text-transform: uppercase;
+      font-size: 55px;
+      line-height: 1.1;
+    }
+    .main__inicio__subtitulo {
+      @extend %configini;
+      text-transform: uppercase;
+      font-size: 25px;
+      line-height: 1.6;
+    }
+    .main__inicio__p {
+      @extend %configini;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+}
+.container__vermas {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  .container__vermas__article {
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    margin: 40px 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    .container__vermas__a {
+      padding: 10px 20px;
+      color: white;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      background-color: $color-secundario;
+      text-decoration: none;
+      &:hover {
+        color: white;
+        background-color: $color-detalle-d;
+      }
+    }
+    .vermas__contenido {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      .container__vermas__titulo {
+        font-weight: 700;
+      }
+      .container__vermas__imagen {
+        object-fit: cover;
+        height: 250px;
+        width: 260px;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.container__titulo {
+  margin: 40px 10px 0px;
+  font-weight: 700;
+  text-align: center;
+}
+.container__novedades {
+  width: 100%;
+  height: 450px;
+  @extend %disposicion;
+  .container__novedades__article {
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin: 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    .container__novedades__h4--jf {
+      @extend %novedades;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+        url(../imagenes/festival.jpg);
+    }
+    .container__novedades__h4--nl {
+      @extend %novedades;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+        url(../imagenes/nuevolocal2.jpg);
+    }
+    .container__novedades__h4--sf {
+      @extend %novedades;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+        url(../imagenes/streetfood.jpg);
+    }
+    .container__novedades__p {
+      padding: 10px;
+      font-size: 0.88rem;
+    }
+  }
+}

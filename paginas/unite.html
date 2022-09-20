@@ -34,7 +34,7 @@
       <nav class="navbar navbar-expand-lg fixed-top header__nav" id="navbar">
         <a href="./index.html" class="header__nav__inicio navbar-brand"></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler navbtn"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#navbarOffcanvasLg"
@@ -43,7 +43,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="offcanvas offcanvas-end"
+          class="offcanvas offcanvas-end headerdiv"
           tabindex="-1"
           id="navbarOffcanvasLg"
           aria-labelledby="navbarOffcanvasLgLabel"
@@ -125,9 +125,11 @@
               <input
                 id="fecha"
                 name="birth_date"
-                type="date"
+                type="text"
                 class="feedback-input"
                 placeholder="Fecha de nacimiento"
+                onfocus="(this.type='date')"
+                onblur="(this.type='text')"
               />
               <input
                 id="pronombre"
@@ -156,12 +158,6 @@
                 class="feedback-text"
                 placeholder="Contanos de vos"
               ></textarea>
-              <input
-                name="cv"
-                type="file"
-                class="inputfile"
-                placeholder="Adjunta tu CV"
-              />
               <div id="cv">
                 <input type="file" id="file-upload" />
                 <label for="file-upload">Adjunta tu CV</label>

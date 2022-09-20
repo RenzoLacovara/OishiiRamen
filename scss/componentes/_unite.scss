@@ -1,0 +1,185 @@
+.sumate__div {
+  width: 100%;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  .sumate {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../imagenes/ramenfondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 480px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 50px;
+    .sumate__h2 {
+      padding-top: 20px;
+      background-color: transparent;
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      text-shadow: rgb(0, 0, 0, 0.7) 0px 4px 1px;
+    }
+  }
+}
+.form {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  div {
+    .logo__form {
+      height: 50px;
+      width: 50px;
+      display: inline-block;
+    }
+  }
+  .form__p {
+    width: 600px;
+    align-self: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    form {
+      width: 500px;
+      margin: 50px auto;
+      margin-bottom: 30px;
+      .enviar {
+        background: $color-secundario;
+        border-radius: 50px;
+        border: 0;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition: all 0.3s;
+        font-weight: 700;
+        width: 180px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        &:hover {
+          background: $color-detalle-d;
+        }
+      }
+      .form__grid {
+        display: grid;
+        grid-template-columns: repeat(1fr, 2);
+        grid-template-rows: repeat(1fr, 6);
+        grid-template-areas:
+          "nombre apellido"
+          "fecha pronombre"
+          "email celu"
+          "textarea textarea"
+          "textarea textarea"
+          "cv puesto";
+        justify-items: center;
+        #nombre {
+          grid-area: nombre;
+        }
+        #apellido {
+          grid-area: apellido;
+        }
+        #fecha {
+          grid-area: fecha;
+        }
+        #pronombre {
+          grid-area: pronombre;
+        }
+        #email {
+          grid-area: email;
+        }
+        #celu {
+          grid-area: celu;
+        }
+        #textarea {
+          grid-area: textarea;
+        }
+        #cv {
+          grid-area: cv;
+          input[type="file"] {
+            opacity: 0;
+            z-index: -1;
+            position: absolute;
+            width: 200px;
+            &:focus + label {
+              border: 2px solid $color-detalle-d;
+            }
+          }
+          label {
+            color: $color-secundario;
+            font-weight: 500;
+            font-size: 18px;
+            border-radius: 5px;
+            line-height: 22px;
+            background-color: transparent;
+            border: 2px solid $color-secundario;
+            transition: all 0.3s;
+            padding: 13px;
+            margin-bottom: 15px;
+            width: 240px;
+            box-sizing: border-box;
+            outline: 0;
+            display: inline-block;
+            position: relative;
+          }
+        }
+        #puesto {
+          grid-area: puesto;
+        }
+        .feedback-input {
+          color: $color-secundario;
+          font-weight: 500;
+          font-size: 18px;
+          border-radius: 5px;
+          line-height: 22px;
+          background-color: transparent;
+          border: 2px solid $color-secundario;
+          transition: all 0.3s;
+          padding: 13px;
+          margin-bottom: 15px;
+          width: 240px;
+          box-sizing: border-box;
+          outline: 0;
+          display: inline-block;
+          &:focus {
+            border: 2px solid $color-detalle-d;
+          }
+        }
+        .feedback-text {
+          height: 150px;
+          line-height: 150%;
+          resize: vertical;
+          color: $color-secundario;
+          font-weight: 500;
+          font-size: 18px;
+          border-radius: 5px;
+          line-height: 22px;
+          background-color: transparent;
+          border: 2px solid $color-secundario;
+          transition: all 0.3s;
+          padding: 13px;
+          margin-bottom: 15px;
+          width: 100%;
+          box-sizing: border-box;
+          outline: 0;
+          &:focus {
+            border: 2px solid $color-detalle-d;
+          }
+        }
+      }
+    }
+  }
+}
