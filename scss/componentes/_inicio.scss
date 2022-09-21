@@ -3,12 +3,18 @@
   height: 480px;
   position: relative;
   @extend %disposicion;
+  @media only screen and (max-width: 600px) {
+    height: 700px;
+  }
   video {
     object-fit: cover;
     width: 100%;
     height: 480px;
     position: absolute;
     z-index: 1;
+    @media only screen and (max-width: 600px) {
+      height: 700px;
+    }
   }
   .container__overlay {
     position: absolute;
@@ -16,6 +22,9 @@
     height: 480px;
     z-index: 2;
     background: rgba(0, 0, 0, 0.6);
+    @media only screen and (max-width: 600px) {
+      height: 700px;
+    }
   }
   .main__inicio {
     background: rgba(223, 231, 233, 0);
@@ -27,17 +36,36 @@
       text-transform: uppercase;
       font-size: 55px;
       line-height: 1.1;
+      @media screen and (max-width: 768px) {
+        text-transform: uppercase;
+        font-size: 65px;
+      }
+      @media only screen and (max-width: 600px) {
+        font-size: 45px;
+      }
     }
     .main__inicio__subtitulo {
       @extend %configini;
       text-transform: uppercase;
       font-size: 25px;
       line-height: 1.6;
+      @media screen and (max-width: 768px) {
+        font-size: 27px;
+      }
+      @media only screen and (max-width: 600px) {
+        font-size: 25px;
+      }
     }
     .main__inicio__p {
       @extend %configini;
       font-size: 16px;
       line-height: 1.4;
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 600px) {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -45,53 +73,95 @@
   display: flex;
   justify-content: center;
   margin-top: 70px;
-  .container__vermas__article {
-    padding: 20px;
-    width: 300px;
+}
+.container__vermas__article {
+  padding: 20px;
+  width: 300px;
+  height: 500px;
+  margin: 40px 20px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  @media screen and (max-width: 768px) {
+    width: 70%;
+    margin: 60px 15%;
     height: 500px;
-    margin: 40px 20px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 70px;
+    margin-top: 40px;
+    height: 500px;
+  }
+  .vermas__contenido {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
-      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-    .container__vermas__a {
-      padding: 10px 20px;
-      color: white;
-      border-radius: 50px;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-      -ms-border-radius: 50px;
-      -o-border-radius: 50px;
-      background-color: $color-secundario;
-      text-decoration: none;
-      &:hover {
-        color: white;
-        background-color: $color-detalle-d;
+    .container__vermas__titulo {
+      font-weight: 700;
+    }
+    .container__vermas__imagen {
+      object-fit: cover;
+      height: 250px;
+      width: 260px;
+      padding: 10px;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+      }
+      @media only screen and (max-width: 600px) {
+        width: 100%;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
       }
     }
-    .vermas__contenido {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      text-align: center;
-      .container__vermas__titulo {
-        font-weight: 700;
+    .container__vermas__p {
+      @media only screen and (max-width: 600px) {
+        width: 80%;
+        padding-top: 10px;
       }
-      .container__vermas__imagen {
-        object-fit: cover;
-        height: 250px;
-        width: 260px;
-        padding: 10px;
-      }
+    }
+  }
+  .container__vermas__a {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    background-color: $color-secundario;
+    text-decoration: none;
+    @media screen and (max-width: 768px) {
+      font-size: 1.3rem;
+      padding: 10px 20px;
+    }
+    @media only screen and (max-width: 600px) {
+      margin: 20px 0px;
+    }
+    &:hover {
+      color: white;
+      background-color: $color-detalle-d;
     }
   }
 }
@@ -100,43 +170,127 @@
   margin: 40px 10px 0px;
   font-weight: 700;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 20px;
+  }
 }
 .container__novedades {
   width: 100%;
   height: 450px;
   @extend %disposicion;
-  .container__novedades__article {
-    display: inline-block;
-    width: 350px;
-    height: 350px;
+  @media screen and (max-width: 768px) {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  @media only screen and (max-width: 600px) {
+    height: auto;
+    width: 100%;
+  }
+}
+.container__novedades__article {
+  display: inline-block;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin: 0px 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    padding: 0px;
+    width: 90%;
+    height: 250px;
+    margin: 40px 5% 50px 5%;
+  }
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+    max-width: 100%;
+    height: 400px;
+    margin: 20px 5%;
+    margin-bottom: 50px;
+  }
+  h4 {
     overflow: hidden;
-    padding: 0;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    margin: 0px 20px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
-      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-    .container__novedades__h4--jf {
-      @extend %novedades;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-        url(../imagenes/festival.jpg);
-    }
-    .container__novedades__h4--nl {
-      @extend %novedades;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-        url(../imagenes/nuevolocal2.jpg);
-    }
-    .container__novedades__h4--sf {
-      @extend %novedades;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-        url(../imagenes/streetfood.jpg);
-    }
-    .container__novedades__p {
+    background-size: cover;
+    width: 350px;
+    height: 200px;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 20px;
+    @media screen and (max-width: 768px) {
       padding: 10px;
-      font-size: 0.88rem;
+      height: 250px;
+      font-size: 1.2rem;
+      width: 60%;
     }
+    @media only screen and (max-width: 600px) {
+      padding: 10px 0px;
+      font-size: 1.8rem;
+      width: 100%;
+      height: 55%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  .container__novedades__h4--jf {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+      url(../imagenes/festival.jpg);
+  }
+  .container__novedades__h4--nl {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+      url(../imagenes/nuevolocal2.jpg);
+  }
+  .container__novedades__h4--sf {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+      url(../imagenes/streetfood.jpg);
+  }
+  .container__novedades__p {
+    padding: 10px;
+    font-size: 0.88rem;
+    @media screen and (max-width: 768px) {
+      padding: 20px;
+      font-size: 1.1rem;
+      width: 40%;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 1.1rem;
+      text-align: center;
+      width: 100%;
+      height: 40%;
+    }
+  }
+}
+.indexlg {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+}
+.indexslid {
+  @media only screen and (max-width: 600px) {
+    padding: 30px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+.novedadeslid {
+  @media only screen and (max-width: 600px) {
+    width: 100%;
   }
 }

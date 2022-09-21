@@ -31,6 +31,9 @@ h2 {
 .header {
   height: 105px;
   overflow: hidden;
+  @media only screen and (max-width: 600px) {
+    height: 105px;
+  }
   .header__nav {
     border-bottom: 2px solid $color-secundario;
     transition: 0.5s;
@@ -38,6 +41,10 @@ h2 {
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
+    @media only screen and (max-width: 600px) {
+      padding-top: 10px;
+      border-bottom: 2px solid $color-secundario;
+    }
     .navbtn {
       margin-right: 30px;
     }
@@ -48,10 +55,36 @@ h2 {
       background-image: url("../iconos/logo2.png");
       background-size: contain;
       background-repeat: no-repeat;
-      .headerdiv {
-        background-color: $color-principal;
+      @media screen and (max-width: 944px) {
+        background-image: url(../iconos/logo.png);
+        background-repeat: no-repeat;
+        margin: 0px;
+        width: 105px;
+        margin-left: 20px;
+        object-fit: cover;
+      }
+      @media screen and (max-width: 768px) {
+        background-image: url("../iconos/logo.png");
+        background-repeat: no-repeat;
       }
     }
+  }
+}
+#navbarOffcanvasLg {
+  background-color: $color-principal;
+  @media screen and (max-width: 992px) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    height: 380px;
+    border-radius: 0px 0px 0px 20px;
+    -webkit-border-radius: 0px 0px 0px 20px;
+    -moz-border-radius: 0px 0px 0px 20px;
+    -ms-border-radius: 0px 0px 0px 20px;
+    -o-border-radius: 0px 0px 0px 20px;
+    overflow: hidden;
   }
 }
 .header__nav__list {
@@ -60,21 +93,54 @@ h2 {
   padding-right: 20px;
   justify-content: end;
   padding-top: 20px;
+  @media screen and (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 30px;
+    list-style: circle;
+  }
   .header__nav__list__item {
     display: flex;
     margin: 0px 20px;
     font-size: 1.3rem;
+    @media screen and (max-width: 992px) {
+      font-size: 1.4rem;
+      margin: 10px 0px;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 1.3rem;
+      color: $color-secundario;
+      text-decoration: none;
+      margin: 10px 0px;
+    }
     .pagina {
       font-weight: 700;
       text-decoration: none;
-      color: #48000c;
+      color: $color-secundario;
+      @media screen and (max-width: 992px) {
+        display: initial;
+        @media only screen and (max-width: 600px) {
+          font-size: 1.4rem;
+        }
+      }
       i {
         display: none;
+        @media screen and (max-width: 992px) {
+          display: initial;
+        }
       }
       &:hover {
-        color: #fd012a;
+        color: $color-detalle;
       }
     }
+  }
+}
+
+btn-close {
+  @media screen and (max-width: 992px) {
+    font-size: 1.4rem;
+    margin: 20px;
   }
 }
 .container__enlacefinal {
@@ -86,6 +152,9 @@ h2 {
     font-weight: 700;
     color: $color-detalle;
     text-decoration: none;
+    @media only screen and (max-width: 600px) {
+      font-size: 1.9rem;
+    }
     &:hover {
       color: $color-detalle-d;
     }
@@ -98,21 +167,40 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media only screen and (max-width: 600px) {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
   .footer__copyright {
     padding-left: 20px;
     font-size: 1.2rem;
+    @media only screen and (max-width: 600px) {
+      padding: 0px;
+      font-size: 1.3rem;
+    }
   }
   .footer__social {
     display: flex;
     padding-right: 20px;
+    @media only screen and (max-width: 600px) {
+      padding: 0px;
+      padding-bottom: 10px;
+    }
     a {
       margin: 0px 5px;
       i {
         font-size: 2.2rem;
+        @media only screen and (max-width: 600px) {
+          font-size: 3rem;
+        }
       }
     }
   }
 }
 .carro {
   display: none;
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
 }

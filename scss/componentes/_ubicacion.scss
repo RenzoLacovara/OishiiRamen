@@ -4,6 +4,10 @@
   align-items: center;
   text-align: center;
   width: 100%;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    height: auto;
+  }
 }
 #horario {
   margin: 20px;
@@ -11,8 +15,14 @@
 }
 .localuno {
   width: 70%;
+  @media only screen and (max-width: 600px) {
+    width: 95%;
+  }
 }
 .localdos {
   margin-top: 50px;
   width: 50%;
+  @media only screen and (max-width: 600px) {
+    width: 80%;
+  }
 }
