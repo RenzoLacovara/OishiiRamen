@@ -146,12 +146,12 @@ btn-close {
 .container__enlacefinal {
   padding-top: 40px;
   height: 130px;
-  text-align: center;
+  text-align: map-get($estilos, centro);
   .container__enlacefinal__a {
-    font-size: 1.5rem;
+    font-size: map-get($estilos, fsize);
     font-weight: 700;
-    color: $color-detalle;
-    text-decoration: none;
+    color: map-get($estilos, tcolor);
+    text-decoration: map-get($estilos, tdecoration);
     @media only screen and (max-width: 600px) {
       font-size: 1.9rem;
     }

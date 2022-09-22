@@ -1429,8 +1429,8 @@ footer .footer__social a i {
   }
 }
 .menu__platos .menu__img {
-  height: 250px;
   width: 250px;
+  height: 250px;
   position: absolute;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
