@@ -930,6 +930,7 @@ footer .footer__social a i {
 }
 @media only screen and (max-width: 600px) {
   .main__ubicacion {
+    margin-top: 50px;
     width: 100%;
     height: auto;
   }
