@@ -161,7 +161,7 @@ btn-close {
   }
 }
 footer {
-  border-top: 2px solid $color-secundario;
+  background-color: $color-secundario;
   height: 70px;
   width: 100%;
   display: flex;
@@ -171,16 +171,26 @@ footer {
     padding: 10px;
     flex-direction: column;
     align-items: center;
+    height: 100px;
   }
   .footer__copyright {
+    background-color: $color-secundario;
+    color: $color-principal;
     padding-left: 20px;
     font-size: 1.2rem;
+    p {
+      background-color: $color-secundario;
+      color: $color-principal;
+      margin: 0px;
+    }
     @media only screen and (max-width: 600px) {
       padding: 0px;
       font-size: 1.3rem;
     }
   }
   .footer__social {
+    background-color: $color-secundario;
+
     display: flex;
     padding-right: 20px;
     @media only screen and (max-width: 600px) {
@@ -188,8 +198,11 @@ footer {
       padding-bottom: 10px;
     }
     a {
+      background-color: $color-secundario;
       margin: 0px 5px;
       i {
+        color: $color-principal;
+        background-color: $color-secundario;
         font-size: 2.2rem;
         @media only screen and (max-width: 600px) {
           font-size: 3rem;

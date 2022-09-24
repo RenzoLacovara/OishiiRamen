@@ -215,7 +215,7 @@ h2::selection {
 }
 
 footer {
-  border-top: 2px solid #48000c;
+  background-color: #48000c;
   height: 70px;
   width: 100%;
   display: flex;
@@ -227,11 +227,19 @@ footer {
     padding: 10px;
     flex-direction: column;
     align-items: center;
+    height: 100px;
   }
 }
 footer .footer__copyright {
+  background-color: #48000c;
+  color: #ffe6cf;
   padding-left: 20px;
   font-size: 1.2rem;
+}
+footer .footer__copyright p {
+  background-color: #48000c;
+  color: #ffe6cf;
+  margin: 0px;
 }
 @media only screen and (max-width: 600px) {
   footer .footer__copyright {
@@ -240,6 +248,7 @@ footer .footer__copyright {
   }
 }
 footer .footer__social {
+  background-color: #48000c;
   display: flex;
   padding-right: 20px;
 }
@@ -250,9 +259,12 @@ footer .footer__social {
   }
 }
 footer .footer__social a {
+  background-color: #48000c;
   margin: 0px 5px;
 }
 footer .footer__social a i {
+  color: #ffe6cf;
+  background-color: #48000c;
   font-size: 2.2rem;
 }
 @media only screen and (max-width: 600px) {
