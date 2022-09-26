@@ -964,6 +964,7 @@ footer .footer__social a i {
 
 .localdos {
   margin-top: 50px;
+  margin-bottom: 50px;
   width: 50%;
 }
 @media only screen and (max-width: 600px) {
