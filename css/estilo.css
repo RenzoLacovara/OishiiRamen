@@ -934,11 +934,21 @@ footer .footer__social a i {
 }
 
 .main__ubicacion {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 100%;
+}
+.main__ubicacion h1 {
+  font-size: 1.8rem;
+}
+.main__ubicacion h2 {
+  font-size: 1.6rem;
+}
+.main__ubicacion h3 {
+  font-size: 1.4rem;
 }
 @media only screen and (max-width: 600px) {
   .main__ubicacion {
@@ -966,6 +976,9 @@ footer .footer__social a i {
   margin-top: 50px;
   margin-bottom: 50px;
   width: 50%;
+}
+.localdos h2 {
+  font-size: 1.6rem;
 }
 @media only screen and (max-width: 600px) {
   .localdos {

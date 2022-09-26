@@ -1,9 +1,19 @@
 .main__ubicacion {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 100%;
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
   @media only screen and (max-width: 600px) {
     margin-top: 50px;
     width: 100%;
@@ -24,6 +34,9 @@
   margin-top: 50px;
   margin-bottom: 50px;
   width: 50%;
+  h2 {
+    font-size: 1.6rem;
+  }
   @media only screen and (max-width: 600px) {
     width: 80%;
   }
