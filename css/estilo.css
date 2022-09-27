@@ -927,6 +927,7 @@ footer .footer__social a i {
 }
 .form .form__p form .form__grid #textarea {
   grid-area: textarea;
+  width: 98%;
 }
 @media only screen and (max-width: 600px) {
   .form .form__p form .form__grid #textarea {
