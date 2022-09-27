@@ -12,7 +12,11 @@ window.addEventListener("scroll", function () {
 
 var hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener("click", function () {
-  // Toggle class "is-active"
   hamburger.classList.toggle("is-active");
-  // Do something else, like open/close menu
+});
+
+window.addEventListener("load", function () {
+  var bannerNode = document.querySelector('[alt="www.000webhost.com"]')
+    .parentNode.parentNode;
+  bannerNode.parentNode.removeChild(bannerNode);
 });
