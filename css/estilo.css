@@ -191,8 +191,7 @@ h2::selection {
 }
 
 .container__enlacefinal {
-  padding-top: 40px;
-  height: 130px;
+  margin: 50px 0px;
   text-align: center;
 }
 .container__enlacefinal .container__enlacefinal__a {
