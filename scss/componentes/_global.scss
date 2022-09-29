@@ -230,20 +230,16 @@ footer {
       .fbico {
         width: 35px;
         height: 35px;
-        padding: 3px 1px 0px 0px;
+        padding: 3px 0px 0px 0px;
         font-weight: 500;
         text-align: center;
-      }
-      .igico,
-      .wpico {
-        font-size: 1.8rem;
+        font-size: 1.82rem;
         background-color: $color-principal;
         color: $color-secundario;
       }
       .fbico {
-        font-weight: 600;
-        font-size: 2.2rem;
-        padding: 0px;
+        font-size: 2rem;
+        font-weight: 100;
       }
     }
   }
