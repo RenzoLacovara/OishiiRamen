@@ -226,6 +226,7 @@
   margin: 0px 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
   @media screen and (max-width: 1199px) {
     margin: 0px;
     margin: 0px 10px;
@@ -284,7 +285,7 @@
       url(../imagenes/streetfood.jpg);
   }
   .container__novedades__p {
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 0.88rem;
     @media screen and (max-width: 768px) {
       padding: 20px;
@@ -318,5 +319,16 @@
 .novedadeslid {
   @media only screen and (max-width: 600px) {
     width: 100%;
+  }
+}
+.container__novedades article {
+  // position: relative;
+  transition: transform ease 300ms;
+  &:hover {
+    transform: translate(0, -20px);
+    -webkit-transform: translate(0, -20px);
+    -moz-transform: translate(0, -20px);
+    -ms-transform: translate(0, -20px);
+    -o-transform: translate(0, -20px);
   }
 }

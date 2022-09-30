@@ -421,6 +421,10 @@ footer .footer__social a .fbico {
   transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+.fa-utensils {
+  padding-right: 4px;
+}
+
 .container__video {
   width: 100%;
   height: 480px;
@@ -759,7 +763,7 @@ footer .footer__social a .fbico {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../imagenes/streetfood.jpg);
 }
 .container__novedades__article .container__novedades__p {
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 0.88rem;
 }
 @media screen and (max-width: 768px) {
@@ -801,6 +805,17 @@ footer .footer__social a .fbico {
   .novedadeslid {
     width: 100%;
   }
+}
+
+.container__novedades article {
+  transition: transform ease 300ms;
+}
+.container__novedades article:hover {
+  transform: translate(0, -20px);
+  -webkit-transform: translate(0, -20px);
+  -moz-transform: translate(0, -20px);
+  -ms-transform: translate(0, -20px);
+  -o-transform: translate(0, -20px);
 }
 
 .sumate__div {
