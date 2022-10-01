@@ -169,13 +169,28 @@
       rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     margin: 30px 0px;
   }
+  .precio {
+    padding-top: 10px;
+    .preciomalo {
+      opacity: 0.7;
+      @media screen and (max-width: 768px) {
+        font-size: 1.4rem;
+      }
+    }
+    .preciobueno {
+      color: $color-detalle;
+      @media screen and (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+  }
   .menu__text {
     display: flex;
     flex-direction: column;
     text-align: right;
     @include size(250px);
     padding: 10px;
-    gap: 15px;
+    gap: 4px;
     position: absolute;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
       rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -189,6 +204,7 @@
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+
     @media screen and (max-width: 768px) {
       position: relative;
       box-shadow: none;
@@ -231,10 +247,10 @@
     .menu__p {
       font-size: 0.9rem;
       @media screen and (max-width: 768px) {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
       }
       @media only screen and (max-width: 600px) {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
       }
     }
   }
@@ -279,6 +295,7 @@
     }
   }
 }
+
 .oscuro {
   main {
     .menu__icono__div {
@@ -295,6 +312,11 @@
         .menu__text {
           background-color: $color-secundario-d;
         }
+        .precio {
+          h3 {
+            color: $color-f;
+          }
+        }
       }
     }
     .carro {
@@ -303,6 +325,11 @@
           .menu__platos {
             .menu__text {
               background-color: $color-secundario-d;
+            }
+            .precio {
+              h3 {
+                color: $color-f;
+              }
             }
           }
         }

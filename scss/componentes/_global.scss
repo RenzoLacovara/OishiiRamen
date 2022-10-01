@@ -388,11 +388,11 @@ footer {
                 .header__nav__list__item {
                   .pagina {
                     color: $color-texto-d;
-                    transition: all 0.1s ease;
-                    -webkit-transition: all 0.1s ease;
-                    -moz-transition: all 0.1s ease;
-                    -ms-transition: all 0.1s ease;
-                    -o-transition: all 0.1s ease;
+                    transition: all 0.2s ease;
+                    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -ms-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
                     &:hover {
                       color: $color-f;
                     }
@@ -466,13 +466,12 @@ input[type="checkbox"] {
   opacity: 1;
   background-color: $color-secundario;
   border-radius: 40px;
-  transition: 0.2s ease background-color, 0.2s ease opacity;
-  -webkit-transition: 0.2s ease background-color, 0.2s ease opacity;
-  -moz-transition: 0.2s ease background-color, 0.2s ease opacity;
-  -ms-transition: 0.2s ease background-color, 0.2s ease opacity;
-  -o-transition: 0.2s ease background-color, 0.2s ease opacity;
+  // transition: 0.2s ease background-color, 0.2s ease opacity;
+  // -webkit-transition: 0.2s ease background-color, 0.2s ease opacity;
+  // -moz-transition: 0.2s ease background-color, 0.2s ease opacity;
+  // -ms-transition: 0.2s ease background-color, 0.2s ease opacity;
+  // -o-transition: 0.2s ease background-color, 0.2s ease opacity;
 }
-
 #_1st-toggle-btn span:before,
 #_1st-toggle-btn span:after {
   content: "";
@@ -481,13 +480,12 @@ input[type="checkbox"] {
   width: 23px;
   height: 23px;
   border-radius: 50%;
-  transition: 0.2s ease transform, 0.2s ease background-color;
-  -webkit-transition: 0.2s ease transform, 0.2s ease background-color;
-  -moz-transition: 0.2s ease transform, 0.2s ease background-color;
-  -ms-transition: 0.2s ease transform, 0.2s ease background-color;
-  -o-transition: 0.2s ease transform, 0.2s ease background-color;
+  // transition: 0.2s ease transform, 0.2s ease background-color;
+  // -webkit-transition: 0.2s ease transform, 0.2s ease background-color;
+  // -moz-transition: 0.2s ease transform, 0.2s ease background-color;
+  // -ms-transition: 0.2s ease transform, 0.2s ease background-color;
+  // -o-transition: 0.2s ease transform, 0.2s ease background-color;
 }
-
 #_1st-toggle-btn span:before {
   background-color: $color-secundario;
   transform: translate(-58px, 0px);

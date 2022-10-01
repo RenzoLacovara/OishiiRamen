@@ -451,11 +451,11 @@ footer .footer__social a .fbico {
 }
 .oscuro .header #navbar .collapse .navbar-nav .dropdown .uldiv .header__nav__list .header__nav__list__item .pagina {
   color: #dfdfdf;
-  transition: all 0.1s ease;
-  -webkit-transition: all 0.1s ease;
-  -moz-transition: all 0.1s ease;
-  -ms-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .oscuro .header #navbar .collapse .navbar-nav .dropdown .uldiv .header__nav__list .header__nav__list__item .pagina:hover {
   color: #e90047;
@@ -519,11 +519,6 @@ input[type=checkbox] {
   opacity: 1;
   background-color: #48000c;
   border-radius: 40px;
-  transition: 0.2s ease background-color, 0.2s ease opacity;
-  -webkit-transition: 0.2s ease background-color, 0.2s ease opacity;
-  -moz-transition: 0.2s ease background-color, 0.2s ease opacity;
-  -ms-transition: 0.2s ease background-color, 0.2s ease opacity;
-  -o-transition: 0.2s ease background-color, 0.2s ease opacity;
 }
 
 #_1st-toggle-btn span:before,
@@ -534,11 +529,6 @@ input[type=checkbox] {
   width: 23px;
   height: 23px;
   border-radius: 50%;
-  transition: 0.2s ease transform, 0.2s ease background-color;
-  -webkit-transition: 0.2s ease transform, 0.2s ease background-color;
-  -moz-transition: 0.2s ease transform, 0.2s ease background-color;
-  -ms-transition: 0.2s ease transform, 0.2s ease background-color;
-  -o-transition: 0.2s ease transform, 0.2s ease background-color;
 }
 
 #_1st-toggle-btn span:before {
@@ -1181,6 +1171,9 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   grid-area: textarea;
   width: 98%;
 }
+.form .form__p form .form__grid #textarea::placeholder {
+  color: #48000c;
+}
 .form .form__p form .form__grid #textarea:hover {
   border: 2px solid #a30015;
 }
@@ -1254,6 +1247,13 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   outline: 0;
   display: inline-block;
 }
+.form .form__p form .form__grid .feedback-input option {
+  background-color: #ffe6cf;
+  color: #48000c;
+}
+.form .form__p form .form__grid .feedback-input::placeholder {
+  color: #48000c;
+}
 @media only screen and (max-width: 600px) {
   .form .form__p form .form__grid .feedback-input {
     width: 90%;
@@ -1299,6 +1299,9 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 }
 .oscuro main .form form .form__grid .feedback-input {
   border: 2px solid #e90047;
+  color: #dfdfdf;
+}
+.oscuro main .form form .form__grid .feedback-input::placeholder {
   color: #dfdfdf;
 }
 .oscuro main .form form .form__grid .feedback-input option {
@@ -1356,6 +1359,14 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 .localuno {
   width: 70%;
 }
+.localuno iframe {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
 @media only screen and (max-width: 600px) {
   .localuno {
     width: 95%;
@@ -1367,6 +1378,14 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   margin-bottom: 50px;
   width: 50%;
 }
+.localdos iframe {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
 .localdos h2 {
   font-size: 1.6rem;
 }
@@ -1374,6 +1393,15 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   .localdos {
     width: 80%;
   }
+}
+
+.oscuro .main__ubicacion .localuno iframe {
+  filter: hue-rotate(325deg);
+  -webkit-filter: hue-rotate(325deg);
+}
+.oscuro .main__ubicacion .localdos iframe {
+  filter: hue-rotate(325deg);
+  -webkit-filter: hue-rotate(325deg);
 }
 
 .container__somos--d {
@@ -1773,6 +1801,25 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
     margin: 30px 0px;
   }
 }
+.menu__platos .precio {
+  padding-top: 10px;
+}
+.menu__platos .precio .preciomalo {
+  opacity: 0.7;
+}
+@media screen and (max-width: 768px) {
+  .menu__platos .precio .preciomalo {
+    font-size: 1.4rem;
+  }
+}
+.menu__platos .precio .preciobueno {
+  color: #fd012a;
+}
+@media screen and (max-width: 768px) {
+  .menu__platos .precio .preciobueno {
+    font-size: 2.5rem;
+  }
+}
 .menu__platos .menu__text {
   display: flex;
   flex-direction: column;
@@ -1780,7 +1827,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   width: 250px;
   height: 250px;
   padding: 10px;
-  gap: 15px;
+  gap: 4px;
   position: absolute;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   transition: all 1s;
@@ -1846,12 +1893,12 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 }
 @media screen and (max-width: 768px) {
   .menu__platos .menu__text .menu__p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 @media only screen and (max-width: 600px) {
   .menu__platos .menu__text .menu__p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 .menu__platos .menu__img {
@@ -1909,8 +1956,14 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 .oscuro main .menu .menu__platos .menu__text {
   background-color: #212121;
 }
+.oscuro main .menu .menu__platos .precio h3 {
+  color: #e90047;
+}
 .oscuro main .carro .carousel-inner .carousel-item .menu__platos .menu__text {
   background-color: #212121;
+}
+.oscuro main .carro .carousel-inner .carousel-item .menu__platos .precio h3 {
+  color: #e90047;
 }
 
 /*# sourceMappingURL=estilo.css.map */

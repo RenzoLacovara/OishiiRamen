@@ -48,8 +48,8 @@ const darkMode = () => {
       checkbox.checked = true;
       body.classList.add("oscuro");
     } else {
-      body.classList.remove("oscuro");
       checkbox.checked = false;
+      body.classList.remove("oscuro");
     }
   };
 
@@ -58,9 +58,8 @@ const darkMode = () => {
       checkbox.checked = true;
       body.classList.add("oscuro");
     } else {
-      body.classList.remove("oscuro");
-
       checkbox.checked = false;
+      body.classList.remove("oscuro");
     }
   };
 

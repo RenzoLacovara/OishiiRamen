@@ -163,6 +163,9 @@
         #textarea {
           grid-area: textarea;
           width: 98%;
+          &::placeholder {
+            color: $color-secundario;
+          }
           &:hover {
             border: 2px solid $color-detalle-d;
           }
@@ -230,6 +233,13 @@
           box-sizing: border-box;
           outline: 0;
           display: inline-block;
+          option {
+            background-color: $color-principal;
+            color: $color-secundario;
+          }
+          &::placeholder {
+            color: $color-secundario;
+          }
           @media only screen and (max-width: 600px) {
             width: 90%;
             height: 70px;
@@ -288,6 +298,9 @@
           .feedback-input {
             border: 2px solid $color-f;
             color: $color-texto-d;
+            &::placeholder {
+              color: $color-texto-d;
+            }
             option {
               background-color: $color-principal-d;
               color: $color-texto-d;
