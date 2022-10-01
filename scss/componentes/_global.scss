@@ -1,9 +1,3 @@
-* {
-  background-color: $color-principal;
-  font-family: "Comfortaa", cursive;
-  font-weight: 400;
-  color: $color-secundario;
-}
 p::selection,
 h3::selection,
 h4::selection,
@@ -13,6 +7,9 @@ a::selection {
 }
 body {
   background-color: $color-principal;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  color: $color-secundario;
 }
 h1 {
   font-weight: 700;
@@ -28,9 +25,11 @@ h2 {
     color: white;
   }
 }
+
 .header {
   height: 105px;
   overflow: hidden;
+
   @media only screen and (max-width: 600px) {
     height: 105px;
   }
@@ -41,6 +40,7 @@ h2 {
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
+    background-color: $color-principal;
     @media only screen and (max-width: 600px) {
       padding-top: 10px;
       border-bottom: 2px solid $color-secundario;
@@ -135,7 +135,7 @@ h2 {
 }
 .dropdown {
   @media only screen and (max-width: 990px) {
-    height: 320px;
+    height: 350px;
   }
 }
 .container__enlacefinal {
@@ -351,4 +351,181 @@ footer {
 }
 .fa-utensils {
   padding-right: 4px;
+}
+
+.oscuro {
+  background-color: $color-principal-d;
+  color: #dfdfdf;
+  .header {
+    #navbar {
+      border-bottom: 2px solid $color-f;
+      background-color: $color-secundario-d;
+      .header__nav__inicio {
+        background-image: url("../iconos/logo1d.png");
+        @media screen and (max-width: 944px) {
+          background-image: url(../iconos/logo2d.png);
+        }
+        @media screen and (max-width: 768px) {
+          background-image: url("../iconos/logo2d.png");
+        }
+      }
+      .hamburger {
+        .hamburger-box {
+          .hamburger-inner {
+            background-color: $color-texto-d;
+            &::after,
+            &::before {
+              background-color: $color-texto-d;
+            }
+          }
+        }
+      }
+      .collapse {
+        .navbar-nav {
+          .dropdown {
+            .uldiv {
+              .header__nav__list {
+                .header__nav__list__item {
+                  .pagina {
+                    color: $color-texto-d;
+                    transition: all 0.1s ease;
+                    -webkit-transition: all 0.1s ease;
+                    -moz-transition: all 0.1s ease;
+                    -ms-transition: all 0.1s ease;
+                    -o-transition: all 0.1s ease;
+                    &:hover {
+                      color: $color-f;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .container__enlacefinal {
+    .container__enlacefinal__a {
+      color: #ebebeb;
+      &:hover {
+        color: $color-f;
+      }
+    }
+  }
+  footer {
+    background-color: $color-secundario-d;
+    .footer__copyright {
+      background-color: $color-secundario-d;
+      p {
+        background-color: $color-secundario-d;
+        color: $color-texto-d;
+      }
+    }
+    .footer__social {
+      background-color: $color-secundario-d;
+      a {
+        outline-color: $color-texto-d;
+        i {
+          color: $color-texto-d;
+          background-color: $color-principal-d;
+        }
+      }
+    }
+  }
+}
+
+.toggle-btn {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 40px;
+}
+
+input[type="checkbox"] {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 0px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+#_1st-toggle-btn span {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+  opacity: 1;
+  background-color: $color-secundario;
+  border-radius: 40px;
+  transition: 0.2s ease background-color, 0.2s ease opacity;
+  -webkit-transition: 0.2s ease background-color, 0.2s ease opacity;
+  -moz-transition: 0.2s ease background-color, 0.2s ease opacity;
+  -ms-transition: 0.2s ease background-color, 0.2s ease opacity;
+  -o-transition: 0.2s ease background-color, 0.2s ease opacity;
+}
+
+#_1st-toggle-btn span:before,
+#_1st-toggle-btn span:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  transition: 0.2s ease transform, 0.2s ease background-color;
+  -webkit-transition: 0.2s ease transform, 0.2s ease background-color;
+  -moz-transition: 0.2s ease transform, 0.2s ease background-color;
+  -ms-transition: 0.2s ease transform, 0.2s ease background-color;
+  -o-transition: 0.2s ease transform, 0.2s ease background-color;
+}
+
+#_1st-toggle-btn span:before {
+  background-color: $color-secundario;
+  transform: translate(-58px, 0px);
+  z-index: 1;
+  -webkit-transform: translate(-58px, 0px);
+  -moz-transform: translate(-58px, 0px);
+  -ms-transform: translate(-58px, 0px);
+  -o-transform: translate(-58px, 0px);
+}
+
+#_1st-toggle-btn span:after {
+  background-color: $color-principal;
+  transform: translate(8px, 0px);
+  z-index: 0;
+}
+
+#_1st-toggle-btn input[type="checkbox"]:checked + span {
+  background-color: $color-f;
+}
+
+#_1st-toggle-btn input[type="checkbox"]:active + span {
+  opacity: 0.5;
+}
+
+#_1st-toggle-btn input[type="checkbox"]:checked + span:before {
+  background-color: $color-f;
+  transform: translate(20px, -4px);
+  -webkit-transform: translate(20px, -4px);
+  -moz-transform: translate(20px, -4px);
+  -ms-transform: translate(20px, -4px);
+  -o-transform: translate(20px, -4px);
+}
+
+#_1st-toggle-btn input[type="checkbox"]:checked + span:after {
+  background-color: $color-secundario;
+  transform: translate(30px, 0px);
+  -webkit-transform: translate(30px, 0px);
+  -moz-transform: translate(30px, 0px);
+  -ms-transform: translate(30px, 0px);
+  -o-transform: translate(30px, 0px);
 }

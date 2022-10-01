@@ -15,6 +15,7 @@
   .menu__icono {
     height: 30px;
     width: 30px;
+
     @media screen and (max-width: 768px) {
       height: 80px;
       width: 80px;
@@ -183,6 +184,11 @@
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
     @media screen and (max-width: 768px) {
       position: relative;
       box-shadow: none;
@@ -270,6 +276,37 @@
       -o-border-radius: 0;
       box-shadow: none;
       object-fit: cover;
+    }
+  }
+}
+.oscuro {
+  main {
+    .menu__icono__div {
+      filter: invert(7%) sepia(34%) saturate(7075%) hue-rotate(336deg)
+        brightness(88%) contrast(109%);
+      -webkit-filter: invert(7%) sepia(34%) saturate(7075%) hue-rotate(336deg)
+        brightness(88%) contrast(109%);
+    }
+    .menu {
+      .menu__platos {
+        img {
+          filter: brightness(0.8) contrast(1.2);
+        }
+        .menu__text {
+          background-color: $color-secundario-d;
+        }
+      }
+    }
+    .carro {
+      .carousel-inner {
+        .carousel-item {
+          .menu__platos {
+            .menu__text {
+              background-color: $color-secundario-d;
+            }
+          }
+        }
+      }
     }
   }
 }

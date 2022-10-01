@@ -13,6 +13,8 @@
       name="keywords"
       content="ramen, oishii, ramenshop, japon, comida japonesa, japanese food, onigiri, cocina, delivery, comida, cordoba, gastronomia"
     />
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,6 +41,10 @@
     <title>Oishii Ramen</title>
   </head>
   <body>
+    <script>
+      const selectedTheme = localStorage.getItem('theme')
+      document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove']("oscuro")
+         </script>
     <header class="header">
       <nav class="navbar navbar-expand-lg fixed-top header__nav" id="navbar">
         <a
@@ -82,6 +88,12 @@
                         >Sumate! <i class="fa-solid fa-handshake-simple"></i></a
                       >
                     </li>
+                    <li class="header__nav__list__item">
+                      <div class="toggle-btn btn-toggle" id="_1st-toggle-btn">
+                        <input id="mode" type="checkbox" onclick="cambiarModo()">
+                        <span></span>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -100,10 +112,8 @@
         </div>
       </div>
       <div class="form">
-        <div>
-          <img class="logo__form" src="../iconos/logo.png" alt="logo" />
-        </div>
         <div class="form__p">
+          <img class="logo__form" src="../iconos/logo.png" alt="logo" />
           <p>
             Con la apertura de nuestro nuevo local estamos en busqueda de
             Ayudante de Cocina, Cocinero, Mozo y Delivery, escribinos!

@@ -14,6 +14,7 @@
     background-attachment: fixed;
     height: 480px;
     width: 100%;
+    margin-top: 20px;
     overflow: hidden;
     @extend %disposicion_column;
     @media only screen and (max-width: 600px) {
@@ -174,5 +175,14 @@
   }
   .img5 {
     grid-area: img5;
+  }
+}
+.oscuro {
+  main {
+    .container__comienzo {
+      img {
+        filter: brightness(0.8) contrast(1.2);
+      }
+    }
   }
 }
