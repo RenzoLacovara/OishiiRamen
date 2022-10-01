@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,8 +13,6 @@
       name="keywords"
       content="ramen, oishii, ramenshop, japon, comida japonesa, japanese food, onigiri, cocina, delivery, comida, cordoba, gastronomia"
     />
-    <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,13 +37,8 @@
     <link rel="stylesheet" href="./css/estilo.css" />
     <link rel="shortcut icon" href="./iconos/logo.png" type="image/x-icon" />
     <title>Oishii Ramen</title>
-
   </head>
   <body>
-    <script>
-      const selectedTheme = localStorage.getItem('theme')
-      document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove']("oscuro")
-         </script>
     <header class="header">
       <nav class="navbar navbar-expand-lg fixed-top header__nav" id="navbar">
         <a
@@ -89,12 +81,6 @@
                       <a href="./paginas/unite.html" class="pagina"
                         >Sumate! <i class="fa-solid fa-handshake-simple"></i></a
                       >
-                    </li>
-                    <li class="header__nav__list__item">
-                      <div class="toggle-btn btn-toggle" id="_1st-toggle-btn">
-                        <input id="mode" type="checkbox" onclick="cambiarModo()">
-                        <span></span>
-                      </div>
                     </li>
                   </ul>
                 </div>
