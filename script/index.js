@@ -15,11 +15,6 @@ hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("is-active");
 });
 
-// window.addEventListener("load", function () {
-//   var bannerNode = document.querySelector('[alt="www.000webhost.com"]')
-//     .parentNode.parentNode;
-//   bannerNode.parentNode.removeChild(bannerNode);
-// });
 const darkMode = () => {
   const body = document.querySelector("body");
   const systemDarkMode = window.matchMedia("(prefers-color-scheme: dark)");

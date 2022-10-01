@@ -1394,7 +1394,6 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   background-attachment: fixed;
   height: 480px;
   width: 100%;
-  margin-top: 20px;
   overflow: hidden;
 }
 @media only screen and (max-width: 600px) {
