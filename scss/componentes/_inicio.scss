@@ -119,7 +119,7 @@
     padding: 0px;
     margin-bottom: 70px;
     margin-top: 40px;
-    height: 500px;
+    height: 530px;
   }
   .vermas__contenido {
     display: flex;
@@ -127,6 +127,16 @@
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    .container__vermas__titulo {
+      font-size: 1.4rem;
+      @media screen and (max-width: 850px) {
+        font-size: 1.2rem;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+        padding-top: 20px;
+      }
+    }
     @media screen and (max-width: 1120px) {
       width: 100%;
     }
@@ -150,7 +160,7 @@
         -o-border-radius: 15px;
       }
       @media only screen and (max-width: 600px) {
-        width: 100%;
+        width: 90%;
         border-radius: 15px;
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
@@ -254,12 +264,15 @@
   h4 {
     overflow: hidden;
     background-size: cover;
-    width: 350px;
+    width: 100%;
     height: 200px;
     color: white;
     font-size: 1.2rem;
     text-align: center;
     padding: 20px;
+    @media screen and (max-width: 810px) {
+      height: 180px;
+    }
     @media screen and (max-width: 768px) {
       padding: 10px;
       height: 250px;
@@ -276,15 +289,15 @@
     }
   }
   .container__novedades__h4--jf {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
       url(../imagenes/festival.jpg);
   }
   .container__novedades__h4--nl {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
       url(../imagenes/nuevolocal2.jpg);
   }
   .container__novedades__h4--sf {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
       url(../imagenes/streetfood.jpg);
   }
   .container__novedades__p {
@@ -292,7 +305,7 @@
     font-size: 0.88rem;
     @media screen and (max-width: 768px) {
       padding: 20px;
-      font-size: 1.1rem;
+      font-size: 1rem;
       width: 40%;
     }
     @media only screen and (max-width: 600px) {

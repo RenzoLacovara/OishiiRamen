@@ -40,7 +40,7 @@
     <link rel="shortcut icon" href="./iconos/logo.png" type="image/x-icon" />
     <title>Oishii Ramen</title>
   </head>
-  <body>
+  <body>    
     <script>
       const selectedTheme = localStorage.getItem('theme')
       document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove']("oscuro")
@@ -91,7 +91,7 @@
                     <li class="header__nav__list__item">
                       <div class="toggle-btn btn-toggle" id="_1st-toggle-btn">
                         <input id="mode" type="checkbox" onclick="cambiarModo()">
-                        <span></span>
+                        <span id="span"></span>
                       </div>
                     </li>
                   </ul>
@@ -382,6 +382,7 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <script src="./script/jquery.js"></script>
     <script src="./script/index.js"></script>
   </body>
 </html>
