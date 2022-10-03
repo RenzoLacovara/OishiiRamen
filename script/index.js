@@ -69,3 +69,39 @@ const darkMode = () => {
 };
 
 darkMode();
+
+var modal = document.getElementById("miModal");
+var modalImg = document.getElementById("modalzoom");
+function openimg1() {
+  var img = document.getElementById("myImg");
+  modal.style.display = "block";
+  modalImg.src = img.src;
+}
+function openimg2() {
+  var img = document.getElementById("myImg2");
+  modal.style.display = "block";
+  modalImg.src = img.src;
+}
+function openimg3() {
+  var img = document.getElementById("myImg3");
+  modal.style.display = "block";
+  modalImg.src = img.src;
+}
+function openimg4() {
+  var img = document.getElementById("myImg4");
+  modal.style.display = "block";
+  modalImg.src = img.src;
+}
+function openimg5() {
+  var img = document.getElementById("myImg5");
+  modal.style.display = "block";
+  modalImg.src = img.src;
+}
+
+modal.onclick = function () {
+  modalzoom.className += " out";
+  setTimeout(function () {
+    modal.style.display = "none";
+    modalzoom.className = "modal-content";
+  }, 400);
+};
