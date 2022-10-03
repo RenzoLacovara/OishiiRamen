@@ -39,7 +39,7 @@
   margin: 20px 0px;
   display: flex;
   justify-content: space-evenly;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     display: none;
     & .menu__platos {
       position: relative;
@@ -60,7 +60,7 @@
     -moz-border-radius: 0px 15px 15px 0px;
     -ms-border-radius: 0px 15px 15px 0px;
     -o-border-radius: 0px 15px 15px 0px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       transform: translate(0px, 0px);
       -webkit-transform: translate(0px, 0px);
       -moz-transform: translate(0px, 0px);
@@ -96,7 +96,7 @@
     -moz-border-radius: 15px 0px 0px 15px;
     -ms-border-radius: 15px 0px 0px 15px;
     -o-border-radius: 15px 0px 0px 15px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       transform: translate(0px, 0px);
       -webkit-transform: translate(0px, 0px);
       -moz-transform: translate(0px, 0px);
@@ -123,7 +123,7 @@
   }
 }
 .menu2 {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     gap: 60px;
     padding: 20px;
   }
@@ -141,8 +141,8 @@
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
-  @media screen and (max-width: 768px) {
-    width: 95%;
+  @media screen and (max-width: 1200px) {
+    width: 76%;
     height: 350px;
     flex-direction: row-reverse;
     border-radius: 15px;
@@ -153,9 +153,13 @@
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
       rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    margin: 30px 12%;
+  }
+  @media screen and (max-width: 868px) {
+    width: 95%;
     margin: 30px 2.5%;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     width: 100%;
     height: 700px;
     flex-direction: column-reverse;
@@ -170,17 +174,33 @@
     margin: 30px 0px;
   }
   .precio {
-    padding-top: 10px;
+    padding: 10px;
+    background-color: #f4dbc5;
+    width: 100%;
+    height: 30%;
+    @media screen and (max-width: 768px) {
+      padding-top: 25px;
+    }
+    @media screen and (max-width: 768px) {
+      padding-top: 15px;
+    }
     .preciomalo {
       opacity: 0.7;
+
       @media screen and (max-width: 768px) {
         font-size: 1.4rem;
+        line-height: 25px;
       }
+    }
+    .pm {
+      opacity: 0;
     }
     .preciobueno {
       color: $color-detalle;
+
       @media screen and (max-width: 768px) {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+        line-height: 30px;
       }
     }
   }
@@ -189,7 +209,7 @@
     flex-direction: column;
     text-align: right;
     @include size(250px);
-    padding: 10px;
+    overflow: hidden;
     gap: 4px;
     position: absolute;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
@@ -204,8 +224,48 @@
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+    justify-content: space-between;
+    height: 100%;
+    .divtext {
+      height: 70%;
+      .menu__h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding: 10px;
+        @media screen and (max-width: 1200px) {
+          font-size: 1.4rem;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 1.6rem;
+          font-weight: 700;
+        }
+        @media only screen and (max-width: 600px) {
+          font-size: 1.6rem;
+          font-weight: 700;
+        }
+        i {
+          font-size: 1.7rem;
+        }
+      }
+      .menu__p {
+        font-size: 0.9rem;
+        padding: 0px 10px;
+        @media screen and (max-width: 1200px) {
+          font-size: 1.3rem;
+        }
+        @media screen and (max-width: 900px) {
+          font-size: 1.18rem;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 1.15rem;
+        }
+        @media only screen and (max-width: 600px) {
+          font-size: 1.3rem;
+        }
+      }
+    }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       position: relative;
       box-shadow: none;
       border-radius: 0;
@@ -214,7 +274,7 @@
       -ms-border-radius: 0;
       -o-border-radius: 0;
       width: 100%;
-      height: 400px;
+      height: 100%;
       text-align: center;
     }
     @media only screen and (max-width: 600px) {
@@ -226,32 +286,8 @@
       -ms-border-radius: 0;
       -o-border-radius: 0;
       width: 100%;
-      height: 400px;
+      height: 100%;
       text-align: center;
-    }
-    .menu__h4 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      @media screen and (max-width: 768px) {
-        font-size: 1.6rem;
-        font-weight: 700;
-      }
-      @media only screen and (max-width: 600px) {
-        font-size: 1.6rem;
-        font-weight: 700;
-      }
-      i {
-        font-size: 1.7rem;
-      }
-    }
-    .menu__p {
-      font-size: 0.9rem;
-      @media screen and (max-width: 768px) {
-        font-size: 1.3rem;
-      }
-      @media only screen and (max-width: 600px) {
-        font-size: 1.3rem;
-      }
     }
   }
   .menu__img {
@@ -269,7 +305,7 @@
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       height: 350px;
       width: 100%;
       position: relative;
@@ -313,6 +349,7 @@
           background-color: $color-secundario-d;
         }
         .precio {
+          background-color: #313131;
           h3 {
             color: $color-f;
           }
@@ -327,6 +364,8 @@
               background-color: $color-secundario-d;
             }
             .precio {
+              background-color: #313131;
+
               h3 {
                 color: $color-f;
               }
@@ -335,5 +374,11 @@
         }
       }
     }
+  }
+}
+.carro2 {
+  display: none;
+  @media screen and (max-width: 1200px) {
+    display: flex;
   }
 }
