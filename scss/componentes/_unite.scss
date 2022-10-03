@@ -14,7 +14,7 @@
     background-size: cover;
     background-attachment: fixed;
     margin-top: 20px;
-    height: 480px;
+    height: 100%;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -22,27 +22,24 @@
     justify-content: start;
     align-items: center;
     padding-top: 50px;
-    @media screen and (max-width: 768px) {
-      background-attachment: unset;
-    }
-    @media only screen and (max-width: 600px) {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../imagenes/ramenfondo3.jpg");
-      background-size: cover;
+
+    @media only screen and (max-width: 1000px) {
       background-position-x: center;
+      background-size: cover;
       height: 100%;
       background-repeat: no-repeat;
       padding-top: 350px;
     }
     .sumate__h2 {
-      padding-top: 20px;
+      padding: 20px;
       background-color: transparent;
       color: white;
       text-align: center;
       font-size: 2rem;
       text-shadow: rgb(0, 0, 0, 0.7) 0px 4px 1px;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1000px) {
         font-size: 1.5rem;
+        padding-bottom: 20px;
       }
       @media only screen and (max-width: 600px) {
         font-size: 1.5rem;
