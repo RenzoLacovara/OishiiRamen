@@ -1479,7 +1479,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   padding: 20px 50px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(1fr, 4);
-  grid-template-areas: "p1 img1 ." "p1 p2 img2" "img3 p2 img4" ". img5 arigato";
+  grid-template-areas: "p1 img1 ." "p1 p2 img2" "img3 p2 img5" ". img4 arigato";
   justify-items: center;
   width: 100%;
   margin-top: 100px;
@@ -1490,7 +1490,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(1fr, 5);
-    grid-template-areas: "p1 img1" "p1 img2" "img3 p2" "img4 p2" "arigato img5";
+    grid-template-areas: "p1 img1" "p1 img2" "img3 p2" "img5 p2" "arigato img4";
     justify-items: center;
     width: 100%;
   }
