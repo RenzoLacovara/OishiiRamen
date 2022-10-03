@@ -501,6 +501,9 @@ input[type="checkbox"] {
   background-color: $color-principal;
   transform: translate(8px, 0px);
   z-index: 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
 }
 
 #_1st-toggle-btn input[type="checkbox"]:checked + span {
@@ -522,6 +525,8 @@ input[type="checkbox"] {
 
 #_1st-toggle-btn input[type="checkbox"]:checked + span:after {
   background-color: $color-secundario;
+  height: 24px;
+  top: 2px;
   transform: translate(30px, 0px);
   -webkit-transform: translate(30px, 0px);
   -moz-transform: translate(30px, 0px);
