@@ -67,41 +67,23 @@ const darkMode = () => {
   window.addEventListener("DOMContentLoaded", findSystemPreference);
   window.addEventListener("DOMContentLoaded", loadInitialState);
 };
-
 darkMode();
 
 var modal = document.getElementById("miModal");
 var modalImg = document.getElementById("modalzoom");
-function openimg1() {
-  var img = document.getElementById("myImg");
+const imgs = document.getElementsByClassName("nos");
+const zoomImg = (e) => {
+  var img = document.getElementById(e.target.id);
   modal.style.display = "block";
   modalImg.src = img.src;
+};
+for (let img of imgs) {
+  img.addEventListener("click", zoomImg);
 }
-function openimg2() {
-  var img = document.getElementById("myImg2");
-  modal.style.display = "block";
-  modalImg.src = img.src;
-}
-function openimg3() {
-  var img = document.getElementById("myImg3");
-  modal.style.display = "block";
-  modalImg.src = img.src;
-}
-function openimg4() {
-  var img = document.getElementById("myImg4");
-  modal.style.display = "block";
-  modalImg.src = img.src;
-}
-function openimg5() {
-  var img = document.getElementById("myImg5");
-  modal.style.display = "block";
-  modalImg.src = img.src;
-}
-
-modal.onclick = function () {
+function cerrarimg() {
   modalzoom.className += " out";
   setTimeout(function () {
     modal.style.display = "none";
     modalzoom.className = "modal-content";
   }, 400);
-};
+}
