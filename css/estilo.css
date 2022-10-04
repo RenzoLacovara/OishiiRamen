@@ -29,6 +29,9 @@ a::selection {
 
 body {
   background-color: #ffe6cf;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: "Comfortaa", cursive;
   font-weight: 400;
   color: #48000c;
@@ -422,8 +425,15 @@ footer .footer__social a .fbico {
   padding-right: 4px;
 }
 
+html {
+  height: 100%;
+}
+
 .oscuro {
-  background-color: #121212;
+  background-image: linear-gradient(135deg, #121212 49%, #313131 100%);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #dfdfdf;
 }
 .oscuro .header #navbar {
@@ -467,6 +477,7 @@ footer .footer__social a .fbico {
   color: #e90047;
 }
 .oscuro footer {
+  border-top: 2px solid #e90047;
   background-color: #212121;
 }
 .oscuro footer .footer__copyright {
@@ -675,6 +686,7 @@ input[type=checkbox] {
   display: flex;
   justify-content: center;
   margin-top: 70px;
+  background-color: transparent;
 }
 @media screen and (max-width: 992px) {
   .container__vermas {
@@ -837,6 +849,7 @@ input[type=checkbox] {
 .container__novedades {
   width: 100%;
   height: 450px;
+  background-color: transparent;
 }
 @media screen and (max-width: 768px) {
   .container__novedades {
