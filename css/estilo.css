@@ -903,6 +903,7 @@ input[type=checkbox] {
   font-size: 1.2rem;
   text-align: center;
   padding: 20px;
+  background-position-x: center;
 }
 @media screen and (max-width: 810px) {
   .container__novedades__article h4 {
@@ -1039,7 +1040,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 .sumate__div .sumate {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/ramenfondo3.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  position: fixed;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -1438,7 +1439,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 }
 .container__somos--d .container__somos {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/somos1.jpg");
-  background-attachment: fixed;
+  position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -1449,6 +1450,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 @media only screen and (max-width: 600px) {
   .container__somos--d .container__somos {
     height: 700px;
+    width: 100%;
   }
 }
 .container__somos--d .container__somos .container__somos__h1 {
