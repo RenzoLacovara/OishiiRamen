@@ -1040,7 +1040,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 .sumate__div .sumate {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/ramenfondo3.jpg");
   background-size: cover;
-  position: fixed;
+  background-attachment: fixed;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -1054,9 +1054,13 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   .sumate__div .sumate {
     background-position-x: center;
     background-size: cover;
-    height: 100%;
     background-repeat: no-repeat;
     padding-top: 350px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sumate__div .sumate {
+    height: 700px;
   }
 }
 .sumate__div .sumate .sumate__h2 {
@@ -1439,7 +1443,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 }
 .container__somos--d .container__somos {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/somos1.jpg");
-  position: fixed;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
