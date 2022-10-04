@@ -23,6 +23,7 @@
     @extend %disposicion_column;
     @media only screen and (max-width: 600px) {
       height: 700px;
+      width: 100%;
     }
     .container__somos__h1 {
       background-color: transparent;
