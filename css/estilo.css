@@ -1052,7 +1052,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 }
 @media only screen and (max-width: 1000px) {
   .sumate__div .sumate {
-    background-position-x: center;
+    background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 350px;
