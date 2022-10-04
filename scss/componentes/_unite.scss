@@ -12,7 +12,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../imagenes/ramenfondo3.jpg");
     background-size: cover;
-    background-attachment: fixed;
+    position: fixed;
     height: 100%;
     width: 100%;
     overflow: hidden;
