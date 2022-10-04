@@ -3,23 +3,26 @@
   height: 480px;
   display: flex;
   align-items: center;
+  margin-top: 10px;
+
   @media only screen and (max-width: 600px) {
-    height: 745px;
+    margin-top: 40px;
+    height: 700px;
     padding-bottom: 60px;
-    margin-top: 15px;
   }
   .container__somos {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../imagenes/somos1.jpg");
     background-attachment: fixed;
-    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 100%;
     width: 100%;
     overflow: hidden;
     @extend %disposicion_column;
     @media only screen and (max-width: 600px) {
-      height: 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
+      height: 700px;
     }
     .container__somos__h1 {
       background-color: transparent;
