@@ -21,18 +21,14 @@ const darkMode = () => {
   const checkbox = document.querySelector("#mode");
   let theme = window.localStorage.getItem("theme");
   let preference;
-
-  const findSystemPreference = () => {
+  const preferencia = () => {
     if (systemDarkMode.matches) {
       preference = "dark";
     } else {
       preference = "light";
     }
   };
-
-  const setUserPreference = (e) => {
-    console.log(e.target);
-
+  const setPreferencia = (e) => {
     if (e.target.checked == true) {
       preference = "dark";
       window.localStorage.setItem("theme", "dark");
@@ -42,7 +38,6 @@ const darkMode = () => {
     }
     setTheme(preference);
   };
-
   const setTheme = (pref) => {
     if (pref === "dark") {
       checkbox.checked = true;
@@ -52,8 +47,7 @@ const darkMode = () => {
       body.classList.remove("oscuro");
     }
   };
-
-  const loadInitialState = () => {
+  const estadoInicial = () => {
     if (theme === "dark") {
       checkbox.checked = true;
       body.classList.add("oscuro");
@@ -62,10 +56,9 @@ const darkMode = () => {
       body.classList.remove("oscuro");
     }
   };
-
-  checkbox.addEventListener("click", setUserPreference);
-  window.addEventListener("DOMContentLoaded", findSystemPreference);
-  window.addEventListener("DOMContentLoaded", loadInitialState);
+  checkbox.addEventListener("click", setPreferencia);
+  window.addEventListener("DOMContentLoaded", preferencia);
+  window.addEventListener("DOMContentLoaded", estadoInicial);
 };
 darkMode();
 
