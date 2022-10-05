@@ -630,6 +630,11 @@ input[type=checkbox] {
   position: relative;
   z-index: 3;
 }
+@media only screen and (max-width: 600px) {
+  .container__video .main__inicio {
+    padding: 0px 20px;
+  }
+}
 .container__video .main__inicio .main__inicio__titulo {
   text-transform: uppercase;
   font-size: 55px;
@@ -1111,7 +1116,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 }
 @media screen and (max-width: 768px) {
   .form {
-    margin-top: 40px;
+    margin-top: 150px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1266,7 +1271,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   .form .form__p form .form__grid #cv label {
     width: 100%;
     height: 70px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: start;
     padding: 20px 15px;
   }
@@ -1294,8 +1299,18 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   background-color: #ffe6cf;
   color: #48000c;
 }
+@media only screen and (max-width: 600px) {
+  .form .form__p form .form__grid .feedback-input option {
+    font-size: 1.2rem;
+  }
+}
 .form .form__p form .form__grid .feedback-input::placeholder {
   color: #48000c;
+}
+@media only screen and (max-width: 600px) {
+  .form .form__p form .form__grid .feedback-input::placeholder {
+    font-size: 1.2rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .form .form__p form .form__grid .feedback-input {
@@ -1327,6 +1342,13 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 }
 .form .form__p form .form__grid .feedback-text:focus {
   border: 2px solid #a30015;
+}
+
+@media only screen and (max-width: 600px) {
+  #pronombre,
+#puesto {
+    font-size: 1.2rem;
+  }
 }
 
 .oscuro main .form div {
