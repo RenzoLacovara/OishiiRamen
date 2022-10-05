@@ -1010,6 +1010,7 @@ input[type=checkbox] {
 
 body.oscuro .carro .carousel-inner .carousel-item .container__vermas__article {
   background-color: #212121;
+  box-shadow: 0px 6px 10px 0px hsla(0deg, 0%, 0%, 0.14), 0px 1px 18px 0px hsla(0deg, 0%, 0%, 0.12), 0px 3px 5px -1px hsla(0deg, 0%, 0%, 0.2);
 }
 body.oscuro .carro .carousel-inner .carousel-item .container__vermas__article .vermas__contenido img {
   filter: brightness(0.8) contrast(1.2);
@@ -1022,9 +1023,11 @@ body.oscuro .carro .carousel-inner .carousel-item .container__vermas__article .c
 }
 body.oscuro .carro .carousel-inner .carousel-item .container__novedades__article {
   background-color: #212121;
+  box-shadow: 0px 6px 10px 0px hsla(0deg, 0%, 0%, 0.14), 0px 1px 18px 0px hsla(0deg, 0%, 0%, 0.12), 0px 3px 5px -1px hsla(0deg, 0%, 0%, 0.2);
 }
 body.oscuro .indexlg .container__vermas .container__vermas__article {
   background-color: #212121;
+  box-shadow: 0px 6px 10px 0px hsla(0deg, 0%, 0%, 0.14), 0px 1px 18px 0px hsla(0deg, 0%, 0%, 0.12), 0px 3px 5px -1px hsla(0deg, 0%, 0%, 0.2);
 }
 body.oscuro .indexlg .container__vermas .container__vermas__article .vermas__contenido img {
   filter: brightness(0.8) contrast(1.2);
@@ -1037,6 +1040,7 @@ body.oscuro .indexlg .container__vermas .container__vermas__article .container__
 }
 body.oscuro .indexlg .container__novedades .container__novedades__article {
   background-color: #212121;
+  box-shadow: 0px 6px 10px 0px hsla(0deg, 0%, 0%, 0.14), 0px 1px 18px 0px hsla(0deg, 0%, 0%, 0.12), 0px 3px 5px -1px hsla(0deg, 0%, 0%, 0.2);
 }
 
 .sumate__div {
@@ -1437,10 +1441,12 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 .oscuro .main__ubicacion .localuno iframe {
   filter: hue-rotate(325deg);
   -webkit-filter: hue-rotate(325deg);
+  box-shadow: 0px 6px 10px 0px hsla(0deg, 0%, 0%, 0.14), 0px 1px 18px 0px hsla(0deg, 0%, 0%, 0.12), 0px 3px 5px -1px hsla(0deg, 0%, 0%, 0.2);
 }
 .oscuro .main__ubicacion .localdos iframe {
   filter: hue-rotate(325deg);
   -webkit-filter: hue-rotate(325deg);
+  box-shadow: 0px 6px 10px 0px hsla(0deg, 0%, 0%, 0.14), 0px 1px 18px 0px hsla(0deg, 0%, 0%, 0.12), 0px 3px 5px -1px hsla(0deg, 0%, 0%, 0.2);
 }
 
 .container__somos--d {
@@ -1645,6 +1651,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 
 .oscuro main .container__comienzo img {
   filter: brightness(0.8) contrast(1.2);
+  box-shadow: 0px 6px 10px 0px hsla(0deg, 0%, 0%, 0.14), 0px 1px 18px 0px hsla(0deg, 0%, 0%, 0.12), 0px 3px 5px -1px hsla(0deg, 0%, 0%, 0.2);
 }
 
 .modal {
