@@ -1068,7 +1068,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-  background-size: 100vw auto;
+  background-size: auto 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
