@@ -81,9 +81,19 @@ function cerrarimg() {
   }, 400);
 }
 
-// let vh = window.innerHeight * 0.01;
-// document.documentElement.style.setProperty("--vh", `${vh}px`);
-// window.addEventListener("resize", () => {
-//   let vh = window.innerHeight * 0.01;
-//   document.documentElement.style.setProperty("--vh", `${vh}px`);
-// });
+fixBackgroundSizeCover = function (event) {
+  var bgImageWidth = 3639,
+    bgImageHeight = 2255,
+    bgImageRatio = bgImageWidth / bgImageHeight,
+    windowSizeRatio = window.innerWidth / window.innerHeight;
+
+  if (bgImageRatio > windowSizeRatio) {
+    document.querySelector(".sumate").style.backgroundSize = "auto 100vh";
+  } else {
+    document.querySelector(".sumate").style.backgroundSize = "100vw auto";
+  }
+};
+
+fixBackgroundSizeCover();
+
+window.addEventListener("resize", fixBackgroundSizeCover);
