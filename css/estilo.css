@@ -19,11 +19,6 @@
   text-shadow: rgba(0, 0, 0, 0.7) 0px 4px 1px;
 }
 
-html {
-  height: fill-available;
-  height: -webkit-fill-available;
-}
-
 p::selection,
 h3::selection,
 h4::selection,
@@ -34,9 +29,8 @@ a::selection {
 
 body {
   background-image: linear-gradient(135deg, #ffe6cf 45%, #ffd2a8 100%);
-  min-height: 100vh;
-  min-height: fill-available;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Comfortaa", cursive;
@@ -434,7 +428,8 @@ footer .footer__social a .fbico {
 
 .oscuro {
   background-image: linear-gradient(135deg, #121212 49%, #313131 100%);
-  min-height: 100vh;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #dfdfdf;
