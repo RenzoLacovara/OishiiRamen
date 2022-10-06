@@ -1,3 +1,7 @@
+html {
+  min-height: 100vh;
+  -webkit-overflow-scrolling: auto;
+}
 p::selection,
 h3::selection,
 h4::selection,
@@ -13,6 +17,8 @@ body {
   font-family: "Comfortaa", cursive;
   font-weight: 400;
   color: $color-secundario;
+  overflow: auto;
+  -webkit-overflow-scrolling: auto;
 }
 h1 {
   font-weight: 700;

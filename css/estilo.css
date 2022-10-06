@@ -19,6 +19,11 @@
   text-shadow: rgba(0, 0, 0, 0.7) 0px 4px 1px;
 }
 
+html {
+  min-height: 100vh;
+  -webkit-overflow-scrolling: auto;
+}
+
 p::selection,
 h3::selection,
 h4::selection,
@@ -35,6 +40,8 @@ body {
   font-family: "Comfortaa", cursive;
   font-weight: 400;
   color: #48000c;
+  overflow: auto;
+  -webkit-overflow-scrolling: auto;
 }
 
 h1 {
