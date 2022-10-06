@@ -80,20 +80,3 @@ function cerrarimg() {
     modalzoom.className = "modal-content";
   }, 400);
 }
-
-fixBackgroundSizeCover = function (event) {
-  var bgImageWidth = 3639,
-    bgImageHeight = 2255,
-    bgImageRatio = bgImageWidth / bgImageHeight,
-    windowSizeRatio = window.innerWidth / window.innerHeight;
-
-  if (bgImageRatio > windowSizeRatio) {
-    document.querySelector(".sumate").style.backgroundSize = "auto 100vh";
-  } else {
-    document.querySelector(".sumate").style.backgroundSize = "100vw auto";
-  }
-};
-
-fixBackgroundSizeCover();
-
-window.addEventListener("resize", fixBackgroundSizeCover);
