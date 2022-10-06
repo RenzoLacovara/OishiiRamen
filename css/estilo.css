@@ -694,7 +694,7 @@ input[type=checkbox] {
   margin-top: 70px;
   background-color: transparent;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 993px) {
   .container__vermas {
     width: 100%;
   }
@@ -719,7 +719,7 @@ input[type=checkbox] {
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 998px) {
   .container__vermas__article {
     width: 30%;
     height: 550px;
@@ -1139,6 +1139,11 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
+@media only screen and (max-width: 620px) {
+  .form .form__p {
+    width: 95%;
+  }
+}
 .form .form__p .logo__form {
   height: 50px;
   width: 50px;
@@ -1493,10 +1498,15 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100vw auto;
-  background-position-x: center;
+  background-position: center;
   height: 100%;
   width: 100%;
   overflow: hidden;
+}
+@media only screen and (max-width: 740px) {
+  .container__somos--d .container__somos {
+    background-size: auto 100vh;
+  }
 }
 @media only screen and (max-width: 600px) {
   .container__somos--d .container__somos {

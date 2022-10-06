@@ -76,6 +76,9 @@
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+    @media only screen and (max-width: 620px) {
+      width: 95%;
+    }
     .logo__form {
       height: 50px;
       width: 50px;
