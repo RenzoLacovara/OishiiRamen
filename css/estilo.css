@@ -1066,9 +1066,9 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/ramenfondo3.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-size: 100vw auto;
   height: 100%;
   width: 100%;
-  background-size: auto 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1087,6 +1087,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 @media only screen and (max-width: 600px) {
   .sumate__div .sumate {
     height: 700px;
+    background-size: auto 100vh;
   }
 }
 .sumate__div .sumate .sumate__h2 {
