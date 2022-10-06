@@ -1055,6 +1055,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  background-attachment: scroll;
 }
 @media only screen and (max-width: 600px) {
   .sumate__div {
@@ -1067,7 +1068,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
-  width: 100%;
+  min-width: 100vw;
   overflow: hidden;
   display: flex;
   flex-direction: column;
