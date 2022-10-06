@@ -1492,7 +1492,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/somos1.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100vw auto;
   background-position-x: center;
   height: 100%;
   width: 100%;
@@ -1501,6 +1501,7 @@ body.oscuro .indexlg .container__novedades .container__novedades__article {
 @media only screen and (max-width: 600px) {
   .container__somos--d .container__somos {
     height: 700px;
+    background-size: auto 100vh;
     width: 100%;
   }
 }
