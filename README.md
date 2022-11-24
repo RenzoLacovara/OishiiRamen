@@ -1,6 +1,6 @@
 # OishiiRamen
 ## Sobre el proyecto
-Sitio web para emprendimiento gastronómico con modo oscuro, diseño responsivo y varias secciones, realizado como proyecto personal para el Curso de Desarrollo Web de CoderHouse
+Sitio web para emprendimiento gastronómico con modo oscuro, responsive design y varias secciones como menú, ubicación, noticias, etc, realizado como proyecto personal para el Curso de Desarrollo Web de CoderHouse
 ![oishii](https://user-images.githubusercontent.com/111152760/203690941-53aba82a-219f-420d-a772-3c310ce8648c.png)
 ## Herramientas utilizadas
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
